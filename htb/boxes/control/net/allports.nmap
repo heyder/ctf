@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Mon Apr 13 14:57:09 2020 as: nmap -p- -oA net/allports 10.10.10.167
+Nmap scan report for 10.10.10.167
+Host is up (0.10s latency).
+Not shown: 65530 filtered ports
+PORT      STATE SERVICE
+80/tcp    open  http
+135/tcp   open  msrpc
+3306/tcp  open  mysql
+49666/tcp open  unknown
+49667/tcp open  unknown
+
+# Nmap done at Mon Apr 13 15:00:05 2020 -- 1 IP address (1 host up) scanned in 175.88 seconds

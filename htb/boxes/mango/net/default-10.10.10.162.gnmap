@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Apr  6 10:22:56 2020 as: nmap -Pn -oA /home/user/.shatter/mango/net/default-10.10.10.162 10.10.10.162
+Host: 10.10.10.162 (staging-order.mango.htb)	Status: Up
+Host: 10.10.10.162 (staging-order.mango.htb)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 443/open/tcp//https///	Ignored State: closed (997)
+# Nmap done at Mon Apr  6 10:23:11 2020 -- 1 IP address (1 host up) scanned in 14.31 seconds

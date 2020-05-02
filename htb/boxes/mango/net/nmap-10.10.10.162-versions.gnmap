@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Apr  6 10:23:11 2020 as: nmap -Pn -sV -sC -p 22,80,443, -oA /home/user/.shatter/mango/net/nmap-10.10.10.162-versions 10.10.10.162
+Host: 10.10.10.162 (staging-order.mango.htb)	Status: Up
+Host: 10.10.10.162 (staging-order.mango.htb)	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 443/open/tcp//ssl|http//Apache httpd 2.4.29 ((Ubuntu))/
+# Nmap done at Mon Apr  6 10:23:30 2020 -- 1 IP address (1 host up) scanned in 19.11 seconds

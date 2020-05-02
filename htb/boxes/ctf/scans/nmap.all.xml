@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Fri Aug  2 16:15:26 2019 as: nmap -sC -p- -sT -T5 -oA scans/nmap.all 10.10.10.122 -->
+<nmaprun scanner="nmap" args="nmap -sC -p- -sT -T5 -oA scans/nmap.all 10.10.10.122" start="1564755326" startstr="Fri Aug  2 16:15:26 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1564755327" endtime="1564755524"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.122" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65346"/>
+<extrareasons reason="host-unreaches" count="187"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/><script id="ssh-hostkey" output="&#xa;  2048 fd:ad:f7:cb:dc:42:1e:43:7d:b3:d5:8b:ce:63:b9:0e (RSA)&#xa;  256 3d:ef:34:5c:e5:17:5e:06:d7:a4:c8:86:ca:e2:df:fb (ECDSA)&#xa;  256 4c:46:e2:16:8a:14:f6:f0:aa:39:6c:97:46:db:b4:40 (ED25519)"><table>
+<elem key="fingerprint">fdadf7cbdc421e437db3d58bce63b90e</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDAsZc86GU/EL8sQR7G68FEBQh1iNs+jKkM4SQCJk2HJrEMxdXnYbtxVqDjmOdtPHApyv21mLRV3AaIPTcAp2cq2ran4FlNaBABjHNTHhKluHqzTPo9UReRs5hhgJghJEXyhdrt9QaJeDy7thcAI1Xt8Ig7FDHP6hyaCPjmziO18bJTFDZLP5nlgPW9i7hsX9Ivdi2G/tmQdKT95PXa/M0df21MpqiVHH9P5XFZUgFTsDG5L9kgDHSBLyIRT+W9FSdTNXKy5tfzt8hR7g3fGUaqGf7QlWbhMUGmZyfbdbgHTlRVuOldBkJqHDsjCapc0W23Ud3+1QR1c1sfeq1uTTaR</elem>
+<elem key="bits">2048.0</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">3def345ce5175e06d7a4c886cae2dffb</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBK6dC3FyS4B3qiIFvkRkMxjuyfooYXRob25AqoUd5s+FAYInaC3fO4qW8ypSwFX8Iz9k8O4AJdiiSjYaIHN6oVg=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">4c46e2168a14f6f0aa396c9746dbb440</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIDLD2IuW71iI2hEkQ2SIAG68fxDx9kwRR+XHt70dkXHW</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/><script id="http-methods" output="&#xa;  Potentially risky methods: TRACE"><table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-title" output="CTF"><elem key="title">CTF</elem>
+</script></port>
+</ports>
+<times srtt="136156" rttvar="10173" to="176848"/>
+</host>
+<runstats><finished time="1564755524" timestr="Fri Aug  2 16:18:44 2019" elapsed="197.64" summary="Nmap done at Fri Aug  2 16:18:44 2019; 1 IP address (1 host up) scanned in 197.64 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

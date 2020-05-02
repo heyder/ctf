@@ -1,0 +1,23 @@
+Auth
+
+http://10.10.10.137:3000/login
+	root:Zk6heYCyv6ZE9Xcg
+
+http://10.10.10.137/management/
+
+http://10.10.10.137/login.php
+http://10.10.10.137:8000/
+
+
+
+[
+{"ID":"1","name":"Admin","Role":"Superuser"},
+{"ID":"2","name":"Derry","Role":"Web Admin"},
+{"ID":"3","name":"Yuri","Role":"Beta Tester"},
+{"ID":"4","name":"Dory","Role":"Supporter"}
+]
+
+{"name":"Admin:WX5b7)>/rp$U)FW"}
+{"name":"Derry:rZ86wwLvx7jUxtch"}
+{"name":"Yuri:bet@tester87"}
+{"name":"Dory:5y:!xa=ybfe)/QD"}

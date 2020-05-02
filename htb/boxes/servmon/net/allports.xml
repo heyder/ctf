@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Apr 19 22:59:45 2020 as: nmap -p- -oA net/allports 10.10.10.184 -->
+<nmaprun scanner="nmap" args="nmap -p- -oA net/allports 10.10.10.184" start="1587329985" startstr="Sun Apr 19 22:59:45 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1587329985" endtime="1587378874"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.184" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65448">
+<extrareasons reason="conn-refused" count="65448"/>
+</extraports>
+<extraports state="filtered" count="68">
+<extrareasons reason="host-unreaches" count="49"/>
+<extrareasons reason="no-responses" count="19"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5666"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="nrpe" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6063"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="x11" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6699"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="napster" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49670"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+</ports>
+<times srtt="103416" rttvar="2979" to="115332"/>
+</host>
+<runstats><finished time="1587378874" timestr="Mon Apr 20 12:34:34 2020" elapsed="48888.78" summary="Nmap done at Mon Apr 20 12:34:34 2020; 1 IP address (1 host up) scanned in 48888.78 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

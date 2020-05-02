@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Apr  6 10:17:02 2020 as: nmap -Pn -oA /home/user/.shatter/rope/net/default-10.10.10.148 10.10.10.148
+Host: 10.10.10.148 ()	Status: Up
+Host: 10.10.10.148 ()	Ports: 22/open/tcp//ssh///, 9999/open/tcp//abyss///	Ignored State: closed (998)
+# Nmap done at Mon Apr  6 10:17:13 2020 -- 1 IP address (1 host up) scanned in 10.41 seconds

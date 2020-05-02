@@ -1,0 +1,89 @@
+Allowed RODC Password Replication Group
+Denied RODC Password Replication Group
+Enterprise Read-only Domain Controllers
+Cloneable Domain Controllers
+Protected Users
+Key Admins
+Enterprise Key Admins
+DnsAdmins
+DnsUpdateProxy
+$331000-VK4ADACQNUCA
+SM_2c8eef0a09b545acb
+SM_ca8c2ed5bdab4dc9b
+SM_75a538d3025e4db9a
+SM_681f53d4942840e18
+SM_1b41c9286325456bb
+SM_9b69f1b9d2cc45549
+SM_7c96b981967141ebb
+SM_c75ee099d0a64c91b
+SM_1ffab36a2f5f479cb
+Guest
+DefaultAccount
+Domain Computers
+Cert Publishers
+Domain Users
+Domain Guests
+Group Policy Creator Owners
+RAS and IAS Servers
+EXCH01$
+FOREST$
+HealthMailboxc3d7722
+HealthMailboxfc9daad
+HealthMailboxc0a90c9
+HealthMailbox670628e
+HealthMailbox968e74d
+HealthMailbox6ded678
+HealthMailbox83d6781
+HealthMailboxfd87238
+HealthMailboxb01ac64
+HealthMailbox7108a4e
+HealthMailbox0659cc1
+$D31000-NSEL5BRJ63V7
+test
+sebastien
+santi
+lucinda
+andy
+mark
+Pre-Windows 2000 Compatible Access
+Incoming Forest Trust Builders
+Windows Authorization Access Group
+Terminal Server License Servers
+Users
+Guests
+Remote Desktop Users
+Network Configuration Operators
+Performance Monitor Users
+Performance Log Users
+Distributed COM Users
+IIS_IUSRS
+Cryptographic Operators
+Event Log Readers
+Certificate Service DCOM Access
+RDS Remote Access Servers
+RDS Endpoint Servers
+RDS Management Servers
+Hyper-V Administrators
+Access Control Assistance Operators
+Remote Management Users
+System Managed Accounts Group
+Storage Replica Administrators
+Organization Management
+Recipient Management
+View-Only Organization Management
+Public Folder Management
+UM Management
+Help Desk
+Records Management
+Discovery Management
+Server Management
+Delegated Setup
+Hygiene Management
+Compliance Management
+Security Reader
+Security Administrator
+Exchange Servers
+Exchange Trusted Subsystem
+Managed Availability Servers
+Exchange Windows Permissions
+ExchangeLegacyInterop

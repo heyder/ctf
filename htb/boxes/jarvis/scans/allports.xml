@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Sep  7 23:49:56 2019 as: nmap -p- -sV -oA scans/allports 10.10.10.143 -->
+<nmaprun scanner="nmap" args="nmap -p- -sV -oA scans/allports 10.10.10.143" start="1567892996" startstr="Sat Sep  7 23:49:56 2019" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="SYN Stealth Scan" time="1567893313" percent="40.94" remaining="458" etc="1567893770"/>
+<taskprogress task="SYN Stealth Scan" time="1567893323" percent="42.01" remaining="452" etc="1567893774"/>
+<taskprogress task="SYN Stealth Scan" time="1567893323" percent="42.06" remaining="451" etc="1567893773"/>
+<taskprogress task="SYN Stealth Scan" time="1567893323" percent="42.10" remaining="450" etc="1567893773"/>
+<host starttime="1567892996" endtime="1567893581"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.143" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="resets" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.4p1 Debian 10+deb9u6" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service></port>
+<port protocol="tcp" portid="5355"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="llmnr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="64999"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service></port>
+</ports>
+<times srtt="127621" rttvar="9408" to="165253"/>
+</host>
+<runstats><finished time="1567893581" timestr="Sat Sep  7 23:59:41 2019" elapsed="584.83" summary="Nmap done at Sat Sep  7 23:59:41 2019; 1 IP address (1 host up) scanned in 584.83 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

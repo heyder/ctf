@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Apr 19 22:55:08 2020 as: nmap -sC -sC -oA net/nmap-10.10.10.184-versions 10.10.10.184
+Host: 10.10.10.184 ()	Status: Up
+Host: 10.10.10.184 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 5666/open/tcp//nrpe///, 6699/open/tcp//napster///, 8443/open/tcp//https-alt///	Ignored State: closed (991)
+# Nmap done at Sun Apr 19 22:56:03 2020 -- 1 IP address (1 host up) scanned in 54.83 seconds

@@ -1,0 +1,5 @@
+see comment on the source index.php
+Basic web enumeration. web fuzzing to find admin.php
+set up the HTTP header X-Forwarded-For: to 192.168.4.28 (see comments on the page)
+sqli on product search on admin
+

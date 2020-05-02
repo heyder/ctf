@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Sat Aug  3 00:24:23 2019 as: nmap -sV -sC -oA scans/nmap.defaut 10.10.10.137
+Host: 10.10.10.137 ()	Status: Up
+Host: 10.10.10.137 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3+ (ext.1)/, 22/open/tcp//ssh?///, 80/open/tcp//http//Apache httpd 2.4.38 ((FreeBSD) PHP|7.3.3)/, 3000/open/tcp//http//Node.js Express framework/, 8000/open/tcp//http//Ajenti http control panel/	Ignored State: closed (995)
+# Nmap done at Sat Aug  3 00:27:32 2019 -- 1 IP address (1 host up) scanned in 189.68 seconds

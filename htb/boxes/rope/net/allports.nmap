@@ -1,0 +1,1 @@
+# Nmap 7.80 scan initiated Tue Apr 14 12:24:24 2020 as: nmap -T1 -v -p- -oA net/allports 10.10.10.148

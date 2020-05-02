@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Apr  7 17:09:37 2020 as: nmap -Pn -oA /home/user/.shatter/control/net/default-10.10.10.167 10.10.10.167
+Host: 10.10.10.167 ()	Status: Up
+Host: 10.10.10.167 ()	Ports: 80/open/tcp//http///, 135/open/tcp//msrpc///, 3306/open/tcp//mysql///	Ignored State: filtered (997)
+# Nmap done at Tue Apr  7 17:09:45 2020 -- 1 IP address (1 host up) scanned in 8.42 seconds

@@ -1,0 +1,8 @@
+enumerate user through ldap
+fix the clock clock-skew
+    rdate -n <domain controller>
+enum4linux show a defalt password on the comment of the user (see how to get it over ldap)
+
+password spray with that default password on all users (kerbrute)
+evil-winrm
+

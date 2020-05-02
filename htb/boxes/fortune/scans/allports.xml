@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Mon Jul 22 10:43:41 2019 as: nmap -p- -sC -sT -&#45;max-retries=0 -oA scans/allports 10.10.10.127 -->
+<nmaprun scanner="nmap" args="nmap -p- -sC -sT -&#45;max-retries=0 -oA scans/allports 10.10.10.127" start="1563785021" startstr="Mon Jul 22 10:43:41 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1563785021" endtime="1563785148"><status state="up" reason="syn-ack" reason_ttl="63"/>
+<address addr="10.10.10.127" addrtype="ipv4"/>
+<hostnames>
+<hostname name="fortune.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="47766">
+<extrareasons reason="conn-refused" count="47766"/>
+</extraports>
+<extraports state="filtered" count="17767">
+<extrareasons reason="no-responses" count="17767"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/><script id="ssh-hostkey" output="&#xa;  2048 07:ca:21:f4:e0:d2:c6:9e:a8:f7:61:df:d7:ef:b1:f4 (RSA)&#xa;  256 30:4b:25:47:17:84:af:60:e2:80:20:9d:fd:86:88:46 (ECDSA)&#xa;  256 93:56:4a:ee:87:9d:f6:5b:f9:d9:25:a6:d8:e0:08:7e (ED25519)"><table>
+<elem key="fingerprint">07ca21f4e0d2c69ea8f761dfd7efb1f4</elem>
+<elem key="bits">2048.0</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDELKAfm1BpeFVd8VUIghLbckoqlQCnzX91NNnUhk64KvTzAM4ZTg0jtpKF+UTNudSrSdJqhGT1Kp0jaKcLw9D5FVEMeuY6MdHEh4AKlJp46FXBhje5kPrw7deMPUQbEcMI6vD8odocp+OL19hcyMea5rh8+5EL3phIc4+joqPo2EndJguLBukIu5wTH6GRr7GDYsgRsyaH48wryhpzn36jtDkyzHWcP3BN/2O6eOTSz+MK4diPHaV3OPHiO0HfCl4DCUu0YsujVIhwvgjlAaKzd/qG2BMhTOUp+D/EOBfKvG5dWWAYDZYOzsyBoh7hyAA7t5jnytfURUgomghq++YR</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">304b25471784af60e280209dfd868846</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGN93hhLLZzrxWUPp9V+sD4Tw7qelUF2d/djEWnvR4q6m59QhnKSqY6jARBEdzTM2U/+/3rlzDdQLEt9Ne6mOqw=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">93564aee879df65bf9d925a6d8e0087e</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJQUfasxFtYgFy6VwI9Xe4PcrQrfF5dRdWIS/k0SoFv9</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<times srtt="111818" rttvar="844" to="115194"/>
+</host>
+<runstats><finished time="1563785148" timestr="Mon Jul 22 10:45:48 2019" elapsed="127.37" summary="Nmap done at Mon Jul 22 10:45:48 2019; 1 IP address (1 host up) scanned in 127.37 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

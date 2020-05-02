@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Sep 23 11:23:49 2019 as: nmap -sC -sV -oA scans/default 10.10.10.101
+Host: 10.10.10.101 ()	Status: Up
+Host: 10.10.10.101 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 2222/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)/, 8080/open/tcp//http//Apache Tomcat|Coyote JSP engine 1.1/	Ignored State: closed (996)
+# Nmap done at Mon Sep 23 11:24:02 2019 -- 1 IP address (1 host up) scanned in 13.42 seconds

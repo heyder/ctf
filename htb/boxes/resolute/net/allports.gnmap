@@ -1,0 +1,2 @@
+# Nmap 7.80 scan initiated Tue Apr 14 22:22:43 2020 as: nmap -p- -oA net/allports
+# Nmap done at Tue Apr 14 22:22:43 2020 -- 0 IP addresses (0 hosts up) scanned in 0.06 seconds

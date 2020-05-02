@@ -1,0 +1,20 @@
+Roteiro and write-up
+
+
+Nmap
+hostname on ssl cert
+nosql bypass / insjection on login form
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection
+
+linpeas
+gtfobin
+oracle docs
+test simple command
+create reverse sh
+execute it as root
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Apr 14 22:10:14 2020 as: nmap -Pn -oA /home/user/.shatter/resolute/net/default-10.10.10.169 10.10.10.169
+Host: 10.10.10.169 ()	Status: Up
+Host: 10.10.10.169 ()	Ports: 53/open/tcp//domain///, 88/open/tcp//kerberos-sec///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 389/open/tcp//ldap///, 445/open/tcp//microsoft-ds///, 464/open/tcp//kpasswd5///, 593/open/tcp//http-rpc-epmap///, 636/open/tcp//ldapssl///, 3268/open/tcp//globalcatLDAP///, 3269/open/tcp//globalcatLDAPssl///	Ignored State: closed (989)
+# Nmap done at Tue Apr 14 22:10:24 2020 -- 1 IP address (1 host up) scanned in 9.79 seconds

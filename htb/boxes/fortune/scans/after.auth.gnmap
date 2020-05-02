@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Thu Aug  1 14:14:03 2019 as: nmap -p- -sV -oA scans/after.auth 10.10.10.127
+Host: 10.10.10.127 (fortune.htb)	Status: Up
+Host: 10.10.10.127 (fortune.htb)	Ports: 22/open/tcp//ssh//OpenSSH 7.9 (protocol 2.0)/, 80/open/tcp//http//OpenBSD httpd/, 111/open/tcp//rpcbind//2 (RPC #100000)/, 443/open/tcp//ssl|https?///, 684/open/tcp//mountd//1-3 (RPC #100005)/, 2049/open/tcp//nfs//2-3 (RPC #100003)/, 8081/open/tcp//http//OpenBSD httpd/	Ignored State: closed (65528)
+# Nmap done at Thu Aug  1 14:32:30 2019 -- 1 IP address (1 host up) scanned in 1106.63 seconds

@@ -1,0 +1,5 @@
+Thestrokes23     ($krb5asrep$23$fsmith@EGOTISTICAL-BANK.LOCAL)
+
+    DefaultDomainName    REG_SZ    EGOTISTICALBANK                   
+    DefaultUserName    REG_SZ    EGOTISTICALBANK\svc_loanmanager     
+    DefaultPassword    REG_SZ    Moneymakestheworldgoround!          

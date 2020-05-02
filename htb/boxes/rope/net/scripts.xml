@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Apr  7 16:46:32 2020 as: nmap -p 22 -sC -sV -oA net/scripts 10.10.10.148 -->
+<nmaprun scanner="nmap" args="nmap -p 22 -sC -sV -oA net/scripts 10.10.10.148" start="1586270792" startstr="Tue Apr  7 16:46:32 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="22"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1586270793" endtime="1586270796"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.10.10.148" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 56:84:89:b6:8f:0a:73:71:7f:b3:dc:31:45:59:0e:2e (RSA)&#xa;  256 76:43:79:bc:d7:cd:c7:c7:03:94:09:ab:1f:b7:b8:2e (ECDSA)&#xa;  256 b3:7d:1c:27:3a:c1:78:9d:aa:11:f7:c6:50:57:25:5e (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCV8wFEv/PCRUs+CxIvxTP1+IlNdlo7bDO+wke2x6Imb/sr9qM5jfV8Fe9lwAgpW348vCZYzqQckfwlZAIqHlypSBjCOalRbxo54DWZOpkCk6kBq5JtCfov2jdiyuc07bSEESKDf3iwNaDGJ+EaLQWWxsc6hRAbqH95rPEQaYf1iV4m6kfwGNHEgEJEXP7oEEsqhvOYJuUZf3ToSWownOrCEcDJWw8l9X85LjDfZYd4uiB/1OcQScFc89KZFEu9uPBbpwGpI97WUtsJ6b/VZCKw+rU3WTUgICqcIhh+YyeQDqnSKuO/LrWQmg9rssZhdZ2OsFsSbqcaVGeenJuON8OX</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">568489b68f0a73717fb3dc3145590e2e</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCKaOC8SBPr23SdizCGRopkroTzDFMI4T1xXBDFtQTiRWTVGc+Vq++UU9zz8shHHfGcyYx3bvWGG4yoh2rKHBP4=</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">764379bcd7cdc7c7039409ab1fb7b82e</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIB39nJRknCn9oMswzN8RW6xZQs5GB3+VNyBRY1Lk4tWA</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">b37d1c273ac1789daa11f7c65057255e</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="101178" rttvar="76371" to="406662"/>
+</host>
+<runstats><finished time="1586270796" timestr="Tue Apr  7 16:46:36 2020" elapsed="3.77" summary="Nmap done at Tue Apr  7 16:46:36 2020; 1 IP address (1 host up) scanned in 3.77 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

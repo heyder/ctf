@@ -1,0 +1,31 @@
+# Nmap 7.80 scan initiated Thu Feb 20 21:33:18 2020 as: nmap -oA scans/default 10.10.10.161
+Nmap scan report for 10.10.10.161
+Host is up (0.14s latency).
+Not shown: 976 closed ports
+PORT      STATE    SERVICE
+53/tcp    open     domain
+82/tcp    filtered xfer
+88/tcp    open     kerberos-sec
+135/tcp   open     msrpc
+139/tcp   open     netbios-ssn
+389/tcp   open     ldap
+445/tcp   open     microsoft-ds
+464/tcp   open     kpasswd5
+593/tcp   open     http-rpc-epmap
+636/tcp   open     ldapssl
+1064/tcp  filtered jstel
+1106/tcp  filtered isoipsigport-1
+1971/tcp  filtered netop-school
+2021/tcp  filtered servexec
+2049/tcp  filtered nfs
+2608/tcp  filtered wag-service
+3268/tcp  open     globalcatLDAP
+3269/tcp  open     globalcatLDAPssl
+3390/tcp  filtered dsc
+5922/tcp  filtered unknown
+5988/tcp  filtered wbem-http
+24800/tcp filtered unknown
+35500/tcp filtered unknown
+65000/tcp filtered unknown
+
+# Nmap done at Thu Feb 20 21:33:53 2020 -- 1 IP address (1 host up) scanned in 34.62 seconds

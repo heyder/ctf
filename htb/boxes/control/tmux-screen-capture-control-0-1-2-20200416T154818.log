@@ -1,0 +1,44 @@
+    + FullyQualifiedErrorId : GetContentReaderUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetContentCommand                      
+                                  
+PS C:\Windows\system32> cd c:\users\administrator                    
+cd c:\users\administrator         
+PS C:\users\administrator> cd desktop                                
+cd desktop                        
+PS C:\users\administrator\desktop> dir                               
+dir                               
+
+
+    Directory: C:\users\administrator\desktop                        
+
+
+Mode                LastWriteTime         Length Name                                                                                      
+----                -------------         ------ ----                                                                                      
+-a----        11/1/2019  12:33 PM             32 root.txt                                                                                  
+
+
+PS C:\users\administrator\desktop> type root.txt                     
+type root.txt                     
+8f8613f5b4da391f36ef11def4cec1b1  
+PS C:\users\administrator\desktop> hostname                          
+hostname                          
+Fidelity                          
+PS C:\users\administrator\desktop> whoami                            
+whoami                            
+nt authority\system               
+PS C:\users\administrator\desktop> ipconfig                          
+ipconfig                          
+
+Windows IP Configuration          
+
+
+Ethernet adapter Ethernet0 2:     
+
+   Connection-specific DNS Suffix  . :                               
+   IPv6 Address. . . . . . . . . . . : dead:beef::7174:e3d:e30c:1bee 
+   Link-local IPv6 Address . . . . . : fe80::7174:e3d:e30c:1bee%8    
+   IPv4 Address. . . . . . . . . . . : 10.10.10.167                  
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0                 
+   Default Gateway . . . . . . . . . : fe80::250:56ff:feb9:8535%8    
+                                       fe80::250:56ff:feb9:7eaa%8    
+                                       10.10.10.2                    
+PS C:\users\administrator\desktop>                                   

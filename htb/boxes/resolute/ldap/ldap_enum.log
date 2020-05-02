@@ -1,0 +1,181 @@
+Trying to get name context
+using namingcontext DC=megabank,DC=local
+getting facts..
+password policy
+maxPwdAge: -9223372036854775808
+minPwdAge: -864000000000
+minPwdLength: 7
+try to enumerate users
+
+# Guest, Users, megabank.local
+dn: CN=Guest,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 514
+sAMAccountName: Guest
+
+# DefaultAccount, Users, megabank.local
+dn: CN=DefaultAccount,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: DefaultAccount
+
+# Ryan Bertrand, Contractors, MegaBank Users, megabank.local
+dn: CN=Ryan Bertrand,OU=Contractors,OU=MegaBank Users,DC=megabank,DC=local
+badPwdCount: 0
+primaryGroupID: 513
+sAMAccountName: ryan
+userPrincipalName: ryan@megabank.local
+
+# Marko Novak, Employees, MegaBank Users, megabank.local
+dn: CN=Marko Novak,OU=Employees,OU=MegaBank Users,DC=megabank,DC=local
+badPwdCount: 7
+primaryGroupID: 513
+sAMAccountName: marko
+userPrincipalName: marko@megabank.local
+
+# Sunita Rahman, Users, megabank.local
+dn: CN=Sunita Rahman,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: sunita
+userPrincipalName: sunita@megabank.local
+
+# Abigail Jeffers, Users, megabank.local
+dn: CN=Abigail Jeffers,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: abigail
+userPrincipalName: abigail@megabank.local
+
+# Marcus Strong, Users, megabank.local
+dn: CN=Marcus Strong,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: marcus
+userPrincipalName: marcus@megabank.local
+
+# Sally May, Users, megabank.local
+dn: CN=Sally May,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: sally
+userPrincipalName: sally@megabank.local
+
+# Fred Carr, Users, megabank.local
+dn: CN=Fred Carr,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: fred
+userPrincipalName: fred@megabank.local
+
+# Angela Perkins, Users, megabank.local
+dn: CN=Angela Perkins,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: angela
+userPrincipalName: angela@megabank.local
+
+# Felicia Carter, Users, megabank.local
+dn: CN=Felicia Carter,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: felicia
+userPrincipalName: felicia@megabank.local
+
+# Gustavo Pallieros, Users, megabank.local
+dn: CN=Gustavo Pallieros,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: gustavo
+userPrincipalName: gustavo@megabank.local
+
+# Ulf Berg, Users, megabank.local
+dn: CN=Ulf Berg,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: ulf
+userPrincipalName: ulf@megabank.local
+
+# Stevie Gerrard, Users, megabank.local
+dn: CN=Stevie Gerrard,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: stevie
+userPrincipalName: stevie@megabank.local
+
+# Claire Norman, Users, megabank.local
+dn: CN=Claire Norman,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: claire
+userPrincipalName: claire@megabank.local
+
+# Paulo Alcobia, Users, megabank.local
+dn: CN=Paulo Alcobia,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: paulo
+userPrincipalName: paulo@megabank.local
+
+# Steve Rider, Users, megabank.local
+dn: CN=Steve Rider,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: steve
+userPrincipalName: steve@megabank.local
+
+# Annette Nilsson, Users, megabank.local
+dn: CN=Annette Nilsson,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: annette
+userPrincipalName: annette@megabank.local
+
+# Annika Larson, Users, megabank.local
+dn: CN=Annika Larson,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: annika
+userPrincipalName: annika@megabank.local
+
+# Per Olsson, Users, megabank.local
+dn: CN=Per Olsson,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: per
+userPrincipalName: per@megabank.local
+
+# Claude Segal, Users, megabank.local
+dn: CN=Claude Segal,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: claude
+userPrincipalName: claude@megabank.local
+
+# Melanie Purkis, Users, megabank.local
+dn: CN=Melanie Purkis,CN=Users,DC=megabank,DC=local
+badPwdCount: 0
+primaryGroupID: 513
+sAMAccountName: melanie
+userPrincipalName: melanie@megabank.local
+
+# Zach Armstrong, Users, megabank.local
+dn: CN=Zach Armstrong,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: zach
+userPrincipalName: zach@megabank.local
+
+# Simon Faraday, Users, megabank.local
+dn: CN=Simon Faraday,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: simon
+userPrincipalName: simon@megabank.local
+
+# Naoki Yamamoto, Users, megabank.local
+dn: CN=Naoki Yamamoto,CN=Users,DC=megabank,DC=local
+badPwdCount: 1
+primaryGroupID: 513
+sAMAccountName: naoki
+userPrincipalName: naoki@megabank.local

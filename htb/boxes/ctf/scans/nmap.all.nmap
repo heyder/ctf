@@ -1,0 +1,16 @@
+# Nmap 7.70 scan initiated Fri Aug  2 16:15:26 2019 as: nmap -sC -p- -sT -T5 -oA scans/nmap.all 10.10.10.122
+Nmap scan report for 10.10.10.122
+Host is up (0.14s latency).
+Not shown: 65533 filtered ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh-hostkey: 
+|   2048 fd:ad:f7:cb:dc:42:1e:43:7d:b3:d5:8b:ce:63:b9:0e (RSA)
+|   256 3d:ef:34:5c:e5:17:5e:06:d7:a4:c8:86:ca:e2:df:fb (ECDSA)
+|_  256 4c:46:e2:16:8a:14:f6:f0:aa:39:6c:97:46:db:b4:40 (ED25519)
+80/tcp open  http
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: CTF
+
+# Nmap done at Fri Aug  2 16:18:44 2019 -- 1 IP address (1 host up) scanned in 197.64 seconds

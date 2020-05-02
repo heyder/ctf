@@ -1,0 +1,1640 @@
+# extended LDIF
+#
+# LDAPv3
+# base <CN=Users,DC=htb,DC=local> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# Users, htb.local
+dn: CN=Users,DC=htb,DC=local
+ufn: Users, htb.local
+objectClass: top
+objectClass: container
+cn: Users
+description: Default container for upgraded user accounts
+distinguishedName: CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918174557.0Z
+whenChanged: 20190923225114.0Z
+uSNCreated: 5888
+uSNChanged: 94253
+showInAdvancedViewOnly: FALSE
+name: Users
+objectGUID:: Gu3LKJt/HkmfzqBT6ViSzQ==
+systemFlags: -1946157056
+objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Allowed RODC Password Replication Group, Users, htb.local
+dn: CN=Allowed RODC Password Replication Group,CN=Users,DC=htb,DC=local
+ufn: Allowed RODC Password Replication Group, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Allowed RODC Password Replication Group
+description: Members in this group can have their passwords replicated to all 
+ read-only domain controllers in the domain
+member: CN=mesh,CN=Users,DC=htb,DC=local
+distinguishedName: CN=Allowed RODC Password Replication Group,CN=Users,DC=htb,
+ DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20200223090916.0Z
+uSNCreated: 12402
+uSNChanged: 437709
+name: Allowed RODC Password Replication Group
+objectGUID:: 4GiYdDpkwE2ZJFv5fPvTaA==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPOwIAAA==
+sAMAccountName: Allowed RODC Password Replication Group
+sAMAccountType: 536870912
+groupType: -2147483644
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Denied RODC Password Replication Group, Users, htb.local
+dn: CN=Denied RODC Password Replication Group,CN=Users,DC=htb,DC=local
+ufn: Denied RODC Password Replication Group, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Denied RODC Password Replication Group
+description: Members in this group cannot have their passwords replicated to a
+ ny read-only domain controllers in the domain
+member: CN=Read-only Domain Controllers,CN=Users,DC=htb,DC=local
+member: CN=Group Policy Creator Owners,CN=Users,DC=htb,DC=local
+member: CN=Domain Admins,CN=Users,DC=htb,DC=local
+member: CN=Cert Publishers,CN=Users,DC=htb,DC=local
+member: CN=Enterprise Admins,CN=Users,DC=htb,DC=local
+member: CN=Schema Admins,CN=Users,DC=htb,DC=local
+member: CN=Domain Controllers,CN=Users,DC=htb,DC=local
+member: CN=krbtgt,CN=Users,DC=htb,DC=local
+distinguishedName: CN=Denied RODC Password Replication Group,CN=Users,DC=htb,D
+ C=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20190918105323.0Z
+uSNCreated: 12405
+uSNChanged: 12433
+name: Denied RODC Password Replication Group
+objectGUID:: 8R6EhZIhIE2InGczVf4kTw==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPPAIAAA==
+sAMAccountName: Denied RODC Password Replication Group
+sAMAccountType: 536870912
+groupType: -2147483644
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Read-only Domain Controllers, Users, htb.local
+dn: CN=Read-only Domain Controllers,CN=Users,DC=htb,DC=local
+ufn: Read-only Domain Controllers, Users, htb.local
+
+# Enterprise Read-only Domain Controllers, Users, htb.local
+dn: CN=Enterprise Read-only Domain Controllers,CN=Users,DC=htb,DC=local
+ufn: Enterprise Read-only Domain Controllers, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Enterprise Read-only Domain Controllers
+description: Members of this group are Read-Only Domain Controllers in the ent
+ erprise
+distinguishedName: CN=Enterprise Read-only Domain Controllers,CN=Users,DC=htb,
+ DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20200223084818.0Z
+uSNCreated: 12429
+uSNChanged: 386676
+name: Enterprise Read-only Domain Controllers
+objectGUID:: MRLX+dkCB0CyOISAoaA9Aw==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNP8gEAAA==
+sAMAccountName: Enterprise Read-only Domain Controllers
+sAMAccountType: 268435456
+groupType: -2147483640
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Cloneable Domain Controllers, Users, htb.local
+dn: CN=Cloneable Domain Controllers,CN=Users,DC=htb,DC=local
+ufn: Cloneable Domain Controllers, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Cloneable Domain Controllers
+description: Members of this group that are domain controllers may be cloned.
+distinguishedName: CN=Cloneable Domain Controllers,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20190918105323.0Z
+uSNCreated: 12440
+uSNChanged: 12442
+name: Cloneable Domain Controllers
+objectGUID:: lTtp2MRo6kSHSNxFwm3UMw==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPCgIAAA==
+sAMAccountName: Cloneable Domain Controllers
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Protected Users, Users, htb.local
+dn: CN=Protected Users,CN=Users,DC=htb,DC=local
+ufn: Protected Users, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Protected Users
+description: Members of this group are afforded additional protections against
+  authentication security threats. See http://go.microsoft.com/fwlink/?LinkId=
+ 298939 for more information.
+distinguishedName: CN=Protected Users,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20190918105323.0Z
+uSNCreated: 12445
+uSNChanged: 12447
+name: Protected Users
+objectGUID:: 8PGf9KxutEWLAEVX2tM33A==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPDQIAAA==
+sAMAccountName: Protected Users
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Key Admins, Users, htb.local
+dn: CN=Key Admins,CN=Users,DC=htb,DC=local
+ufn: Key Admins, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Key Admins
+description: Members of this group can perform administrative actions on key o
+ bjects within the domain.
+distinguishedName: CN=Key Admins,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20190918105323.0Z
+uSNCreated: 12450
+uSNChanged: 12452
+name: Key Admins
+objectGUID:: u1pq2QGIOk+QlGxpV02CrQ==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPDgIAAA==
+sAMAccountName: Key Admins
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Enterprise Key Admins, Users, htb.local
+dn: CN=Enterprise Key Admins,CN=Users,DC=htb,DC=local
+ufn: Enterprise Key Admins, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Enterprise Key Admins
+description: Members of this group can perform administrative actions on key o
+ bjects within the forest.
+distinguishedName: CN=Enterprise Key Admins,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20200223084526.0Z
+uSNCreated: 12453
+uSNChanged: 380678
+name: Enterprise Key Admins
+objectGUID:: ET8KjKx4t0WjL4z6I7fwkw==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPDwIAAA==
+sAMAccountName: Enterprise Key Admins
+sAMAccountType: 268435456
+groupType: -2147483640
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# DnsAdmins, Users, htb.local
+dn: CN=DnsAdmins,CN=Users,DC=htb,DC=local
+ufn: DnsAdmins, Users, htb.local
+objectClass: top
+objectClass: group
+cn: DnsAdmins
+description: DNS Administrators Group
+distinguishedName: CN=DnsAdmins,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105403.0Z
+whenChanged: 20190918105403.0Z
+uSNCreated: 12483
+uSNChanged: 12485
+name: DnsAdmins
+objectGUID:: Go/XZDmn/k+6I+oOf4Rriw==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPTQQAAA==
+sAMAccountName: DnsAdmins
+sAMAccountType: 536870912
+groupType: -2147483644
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# DnsUpdateProxy, Users, htb.local
+dn: CN=DnsUpdateProxy,CN=Users,DC=htb,DC=local
+ufn: DnsUpdateProxy, Users, htb.local
+objectClass: top
+objectClass: group
+cn: DnsUpdateProxy
+description: DNS clients who are permitted to perform dynamic updates on behal
+ f of some other clients (such as DHCP servers).
+distinguishedName: CN=DnsUpdateProxy,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105403.0Z
+whenChanged: 20190918105403.0Z
+uSNCreated: 12488
+uSNChanged: 12488
+name: DnsUpdateProxy
+objectGUID:: lXwsDEvqikWklJPfb4OXmg==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPTgQAAA==
+sAMAccountName: DnsUpdateProxy
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Exchange Online-ApplicationAccount, Users, htb.local
+dn: CN=Exchange Online-ApplicationAccount,CN=Users,DC=htb,DC=local
+ufn: Exchange Online-ApplicationAccount, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Exchange Online-ApplicationAccount
+distinguishedName: CN=Exchange Online-ApplicationAccount,CN=Users,DC=htb,DC=lo
+ cal
+instanceType: 4
+whenCreated: 20190919111126.0Z
+whenChanged: 20190919111126.0Z
+uSNCreated: 23683
+uSNChanged: 23684
+garbageCollPeriod: 1209600
+name: Exchange Online-ApplicationAccount
+objectGUID:: XB+fL+x9IUyP+k3Hd+dsSg==
+userAccountControl: 546
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPYwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: $331000-VK4ADACQNUCA
+sAMAccountType: 805306368
+userPrincipalName: Exchange_Online-ApplicationAccount@htb.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+msExchVersion: 1130555651391488
+msExchProvisioningFlags: 0
+msExchMailboxAuditEnable: FALSE
+msExchUserBL: CN=MeetingGraphApplication-Exchange Online-ApplicationAccount,CN
+ =Role Assignments,CN=RBAC,CN=First Organization,CN=Microsoft Exchange,CN=Serv
+ ices,CN=Configuration,DC=htb,DC=local
+msExchUserBL: CN=MailboxSearchApplication-Exchange Online-ApplicationAccount,C
+ N=Role Assignments,CN=RBAC,CN=First Organization,CN=Microsoft Exchange,CN=Ser
+ vices,CN=Configuration,DC=htb,DC=local
+msExchUserBL: CN=TeamMailboxLifecycleApplication-Exchange Online-ApplicationAc
+ cou,CN=Role Assignments,CN=RBAC,CN=First Organization,CN=Microsoft Exchange,C
+ N=Services,CN=Configuration,DC=htb,DC=local
+msExchUserBL: CN=Mailbox Search-Exchange Online-ApplicationAccount,CN=Role Ass
+ ignments,CN=RBAC,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=C
+ onfiguration,DC=htb,DC=local
+msExchUserBL: CN=LegalHoldApplication-Exchange Online-ApplicationAccount,CN=Ro
+ le Assignments,CN=RBAC,CN=First Organization,CN=Microsoft Exchange,CN=Service
+ s,CN=Configuration,DC=htb,DC=local
+msExchUserBL: CN=ArchiveApplication-Exchange Online-ApplicationAccount,CN=Role
+  Assignments,CN=RBAC,CN=First Organization,CN=Microsoft Exchange,CN=Services,
+ CN=Configuration,DC=htb,DC=local
+msExchUserBL: CN=UserApplication-Exchange Online-ApplicationAccount,CN=Role As
+ signments,CN=RBAC,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=
+ Configuration,DC=htb,DC=local
+msExchTransportRecipientSettingsFlags: 0
+internetEncoding: 0
+msExchModerationFlags: 6
+msExchRecipientSoftDeletedStatus: 0
+msExchUserAccountControl: 0
+msExchUMEnabledFlags2: -1
+msExchMailboxFolderSet: 0
+msExchRecipientDisplayType: 12
+msExchBypassAudit: FALSE
+msExchMailboxAuditLogAgeLimit: 7776000
+msExchMDBRulesQuota: 256
+msExchRecipientTypeDetails: 33554432
+msExchGroupSecurityFlags: 0
+msExchAddressBookFlags: 1
+
+# SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}, Users, htb.local
+dn: CN=SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1},CN=Users,DC=htb,DC=
+ local
+ufn: SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}
+sn: MSExchApproval 1f05a927-3be2-4fb9-aa03-b59fe3b56f4c
+distinguishedName: CN=SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1},CN=U
+ sers,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190919111127.0Z
+whenChanged: 20190919114715.0Z
+displayName: Microsoft Exchange Approval Assistant
+uSNCreated: 23777
+uSNChanged: 24819
+proxyAddresses: SMTP:SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}@htb.l
+ ocal
+name: SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}
+objectGUID:: K6oBekhMR0qykSAmZwXv7Q==
+userAccountControl: 514
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPZAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: SM_2c8eef0a09b545acb
+sAMAccountType: 805306368
+legacyExchangeDN: /o=First Organization/ou=Exchange Administrative Group (FYDI
+ BOHF23SPDLT)/cn=Recipients/cn=4d0d9ee8e5aa4097bfd477c844b94abf-Syste
+userPrincipalName: SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}@htb.loc
+ al
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+mail: SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}@htb.local
+msExchVersion: 1126140425011200
+msExchProvisioningFlags: 0
+homeMDB: CN=Mailbox Database 1118319013,CN=Databases,CN=Exchange Administrativ
+ e Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=First Organization,CN=M
+ icrosoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=local
+msExchApprovalApplicationLink: CN=ModeratedRecipients,CN=Approval Applications
+ ,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=
+ htb,DC=local
+msExchApprovalApplicationLink: CN=AutoGroup,CN=Approval Applications,CN=First 
+ Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=loc
+ al
+msExchMailboxSecurityDescriptor:: AQAEgBQAAAAgAAAAAAAAACwAAAABAQAAAAAABQoAAAAB
+ AQAAAAAABQoAAAAEABwAAQAAAAACFAAFAAIAAQEAAAAAAAUKAAAA
+msExchRequireAuthToSendTo: TRUE
+msExchArchiveQuota: 104857600
+msExchMailboxAuditEnable: FALSE
+msExchTransportRecipientSettingsFlags: 0
+msExchDumpsterWarningQuota: 20971520
+msExchELCMailboxFlags: 130
+msExchMailboxTemplateLink: CN=ArbitrationMailbox,CN=Retention Policies Contain
+ er,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,D
+ C=htb,DC=local
+msExchHideFromAddressLists: TRUE
+msExchHomeServerName: /o=First Organization/ou=Exchange Administrative Group (
+ FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=EXCH01
+msExchMasterAccountSid:: AQEAAAAAAAUKAAAA
+msExchMailboxGuid:: 2BTFE/z0cEGcqCyxA7V8tA==
+msExchDumpsterQuota: 31457280
+msExchCalendarLoggingQuota: 6291456
+msExchUMDtmfMap: emailAddress:797836624526913052927892047252322452711419621
+msExchUMDtmfMap: lastNameFirstName:6739242777682513052927323243292203259333256
+ 342
+msExchUMDtmfMap: firstNameLastName:6739242777682513052927323243292203259333256
+ 342
+msExchArchiveWarnQuota: 94371840
+msExchModerationFlags: 6
+msExchRecipientSoftDeletedStatus: 0
+msExchUserAccountControl: 2
+msExchUMEnabledFlags2: -1
+msExchMailboxFolderSet: 0
+msExchRecipientDisplayType: 10
+mDBUseDefaults: FALSE
+msExchBypassAudit: FALSE
+msExchMailboxAuditLogAgeLimit: 7776000
+msExchPoliciesIncluded: f5cca5ec-fafc-4e09-8b7f-be05572cb7cb
+msExchPoliciesIncluded: {26491cfc-9e50-4857-861b-0cb8df22b5d7}
+msExchRecipientTypeDetails: 8388608
+mailNickname: SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}
+msExchWhenMailboxCreated: 20190919114715.0Z
+msExchGroupSecurityFlags: 0
+msExchAddressBookFlags: 1
+
+# SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}, Users, htb.local
+dn: CN=SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c},CN=Users,DC=htb,DC=
+ local
+ufn: SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}
+sn: SystemMailbox bb558c35-97f1-4cb9-8ff7-d53741dc928c
+distinguishedName: CN=SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c},CN=U
+ sers,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190919111127.0Z
+whenChanged: 20190919114931.0Z
+displayName: Microsoft Exchange
+uSNCreated: 23782
+uSNChanged: 24888
+proxyAddresses: SMTP:SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}@htb.l
+ ocal
+name: SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}
+objectGUID:: 9KdxwgAw9UOjpHQavNi+ww==
+userAccountControl: 514
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPZQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: SM_ca8c2ed5bdab4dc9b
+sAMAccountType: 805306368
+legacyExchangeDN: /o=First Organization/ou=Exchange Administrative Group (FYDI
+ BOHF23SPDLT)/cn=Recipients/cn=5f90cd7455db492fb2b3b90df3946396-Syste
+userPrincipalName: SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}@htb.loc
+ al
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+mail: SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}@htb.local
+msExchVersion: 1126140425011200
+msExchProvisioningFlags: 0
+homeMDB: CN=Mailbox Database 1118319013,CN=Databases,CN=Exchange Administrativ
+ e Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=First Organization,CN=M
+ icrosoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=local
+msExchApprovalApplicationLink: CN=ModeratedRecipients,CN=Approval Applications
+ ,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=
+ htb,DC=local
+msExchApprovalApplicationLink: CN=AutoGroup,CN=Approval Applications,CN=First 
+ Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=loc
+ al
+msExchMailboxSecurityDescriptor:: AQAEgBQAAAAgAAAAAAAAACwAAAABAQAAAAAABQoAAAAB
+ AQAAAAAABQoAAAAEABwAAQAAAAACFAAFAAIAAQEAAAAAAAUKAAAA
+msExchRequireAuthToSendTo: TRUE
+msExchArchiveQuota: 104857600
+msExchMailboxAuditEnable: FALSE
+msExchTransportRecipientSettingsFlags: 0
+msExchDumpsterWarningQuota: 20971520
+msExchELCMailboxFlags: 130
+msExchMailboxTemplateLink: CN=ArbitrationMailbox,CN=Retention Policies Contain
+ er,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,D
+ C=htb,DC=local
+msExchHideFromAddressLists: TRUE
+msExchHomeServerName: /o=First Organization/ou=Exchange Administrative Group (
+ FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=EXCH01
+msExchMasterAccountSid:: AQEAAAAAAAUKAAAA
+msExchMailboxGuid:: TtIV23r96U21SzhiG7UJTA==
+msExchTextMessagingState: 302120705
+msExchTextMessagingState: 16842751
+msExchDumpsterQuota: 31457280
+msExchCalendarLoggingQuota: 6291456
+msExchUMDtmfMap: emailAddress:797836624526922558235973142298337353741329282
+msExchUMDtmfMap: lastNameFirstName:7978366245269225582359731422983373537413292
+ 82
+msExchUMDtmfMap: firstNameLastName:7978366245269225582359731422983373537413292
+ 82
+msExchArchiveWarnQuota: 94371840
+msExchModerationFlags: 6
+msExchCapabilityIdentifiers: 46
+msExchCapabilityIdentifiers: 52
+msExchCapabilityIdentifiers: 51
+msExchCapabilityIdentifiers: 47
+msExchCapabilityIdentifiers: 44
+msExchCapabilityIdentifiers: 43
+msExchCapabilityIdentifiers: 42
+msExchCapabilityIdentifiers: 40
+msExchRecipientSoftDeletedStatus: 0
+msExchUserAccountControl: 2
+msExchUMEnabledFlags2: -1
+msExchMailboxFolderSet: 0
+submissionContLength: 1048576
+msExchRecipientDisplayType: 10
+mDBUseDefaults: FALSE
+msExchBypassAudit: FALSE
+msExchMailboxAuditLogAgeLimit: 7776000
+msExchPoliciesIncluded: f5cca5ec-fafc-4e09-8b7f-be05572cb7cb
+msExchPoliciesIncluded: {26491cfc-9e50-4857-861b-0cb8df22b5d7}
+msExchOABGeneratingMailboxBL: CN=Default Offline Address Book,CN=Offline Addre
+ ss Lists,CN=Address Lists Container,CN=First Organization,CN=Microsoft Exchan
+ ge,CN=Services,CN=Configuration,DC=htb,DC=local
+msExchRecipientTypeDetails: 8388608
+mailNickname: SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}
+msExchWhenMailboxCreated: 20190919114721.0Z
+msExchGroupSecurityFlags: 0
+msExchAddressBookFlags: 1
+
+# SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}, Users, htb.local
+dn: CN=SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9},CN=Users,DC=htb,DC=
+ local
+ufn: SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}
+sn: MsExchDiscovery e0dc1c29-89c3-4034-b678-e6c29d823ed9
+distinguishedName: CN=SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9},CN=U
+ sers,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190919111127.0Z
+whenChanged: 20190919114729.0Z
+displayName: Microsoft Exchange
+uSNCreated: 23787
+uSNChanged: 24836
+proxyAddresses: SMTP:SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}@htb.l
+ ocal
+name: SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}
+objectGUID:: frjjGcomGUWzDMUFg/vZJQ==
+userAccountControl: 514
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPZgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: SM_75a538d3025e4db9a
+sAMAccountType: 805306368
+legacyExchangeDN: /o=First Organization/ou=Exchange Administrative Group (FYDI
+ BOHF23SPDLT)/cn=Recipients/cn=44aefc0a94d2429fa20e64cf51b1c537-Syste
+userPrincipalName: SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}@htb.loc
+ al
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+mail: SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}@htb.local
+msExchVersion: 1126140425011200
+msExchProvisioningFlags: 0
+homeMDB: CN=Mailbox Database 1118319013,CN=Databases,CN=Exchange Administrativ
+ e Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=First Organization,CN=M
+ icrosoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=local
+msExchMailboxSecurityDescriptor:: AQAEgBQAAAAgAAAAAAAAACwAAAABAQAAAAAABQoAAAAB
+ AQAAAAAABQoAAAAEABwAAQAAAAACFAAFAAIAAQEAAAAAAAUKAAAA
+msExchRequireAuthToSendTo: TRUE
+msExchArchiveQuota: 104857600
+msExchMailboxAuditEnable: FALSE
+msExchTransportRecipientSettingsFlags: 0
+msExchDumpsterWarningQuota: 20971520
+msExchELCMailboxFlags: 2
+msExchMailboxTemplateLink: CN=ArbitrationMailbox,CN=Retention Policies Contain
+ er,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,D
+ C=htb,DC=local
+msExchHideFromAddressLists: TRUE
+msExchHomeServerName: /o=First Organization/ou=Exchange Administrative Group (
+ FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=EXCH01
+msExchMasterAccountSid:: AQEAAAAAAAUKAAAA
+msExchMailboxGuid:: qgoyiL+jQEu0lkWXMv0iPQ==
+msExchDumpsterQuota: 31457280
+msExchCalendarLoggingQuota: 6291456
+msExchUMDtmfMap: emailAddress:797836624526930321229892340342678362293823339
+msExchUMDtmfMap: lastNameFirstName:6739243472683793032122989234034267836229382
+ 3339
+msExchUMDtmfMap: firstNameLastName:6739243472683793032122989234034267836229382
+ 3339
+msExchArchiveWarnQuota: 94371840
+msExchModerationFlags: 6
+msExchCapabilityIdentifiers: 41
+msExchRecipientSoftDeletedStatus: 0
+msExchUserAccountControl: 2
+msExchUMEnabledFlags2: -1
+msExchMailboxFolderSet: 0
+msExchRecipientDisplayType: 10
+mDBUseDefaults: FALSE
+msExchBypassAudit: FALSE
+msExchMailboxAuditLogAgeLimit: 7776000
+msExchPoliciesIncluded: f5cca5ec-fafc-4e09-8b7f-be05572cb7cb
+msExchPoliciesIncluded: {26491cfc-9e50-4857-861b-0cb8df22b5d7}
+msExchRecipientTypeDetails: 8388608
+mailNickname: SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}
+msExchWhenMailboxCreated: 20190919114729.0Z
+msExchGroupSecurityFlags: 0
+msExchAddressBookFlags: 1
+
+# DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852}, Users, htb.loc
+ al
+dn: CN=DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852},CN=Users,
+ DC=htb,DC=local
+ufn: DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852}, Users, htb
+ .local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852}
+sn: MsExchDiscoveryMailbox D919BA05-46A6-415f-80AD-7E09334BB852
+distinguishedName: CN=DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334B
+ B852},CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190919111127.0Z
+whenChanged: 20190919114840.0Z
+displayName: Discovery Search Mailbox
+uSNCreated: 23792
+uSNChanged: 24875
+proxyAddresses: SMTP:DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB8
+ 52}@htb.local
+name: DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852}
+objectGUID:: Ja8BHHrgxU61HK3legZIDA==
+userAccountControl: 514
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPZwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: SM_681f53d4942840e18
+sAMAccountType: 805306368
+showInAddressBook: CN=All Mailboxes(VLV),CN=All System Address Lists,CN=Addres
+ s Lists Container,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=
+ Configuration,DC=htb,DC=local
+showInAddressBook: CN=All Recipients(VLV),CN=All System Address Lists,CN=Addre
+ ss Lists Container,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN
+ =Configuration,DC=htb,DC=local
+legacyExchangeDN: /o=First Organization/ou=Exchange Administrative Group (FYDI
+ BOHF23SPDLT)/cn=Recipients/cn=4603f8b937e84923b718670f87760b7b-Disco
+userPrincipalName: DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB85
+ 2}@htb.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+mail: DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}@htb.local
+msExchVersion: 88218628259840
+mDBOverHardQuotaLimit: 52428800
+authOrigBL: CN=DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852},C
+ N=Users,DC=htb,DC=local
+msExchProvisioningFlags: 0
+homeMDB: CN=Mailbox Database 1118319013,CN=Databases,CN=Exchange Administrativ
+ e Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=First Organization,CN=M
+ icrosoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=local
+msExchMailboxSecurityDescriptor:: AQAEjBQAAAAgAAAAAAAAACwAAAABAQAAAAAABQoAAAAB
+ AQAAAAAABQoAAAAEAEAAAgAAAAACFAABAAIAAQEAAAAAAAUKAAAAAAIkAAEAAAABBQAAAAAABRUAA
+ AAsHiW3FXWyFcWw809XBAAA
+msExchArchiveQuota: 104857600
+msExchMailboxAuditEnable: FALSE
+delivContLength: 102400
+authOrig: CN=DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852},CN=
+ Users,DC=htb,DC=local
+msExchTransportRecipientSettingsFlags: 0
+msExchDumpsterWarningQuota: 20971520
+msExchELCMailboxFlags: 134
+msExchHideFromAddressLists: TRUE
+msExchHomeServerName: /o=First Organization/ou=Exchange Administrative Group (
+ FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=EXCH01
+mDBOverQuotaLimit: 52428800
+msExchMasterAccountSid:: AQEAAAAAAAUKAAAA
+msExchRBACPolicyLink: CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN
+ =First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=htb
+ ,DC=local
+msExchMailboxGuid:: tyyKW1N2rkG3YnWxFuh10g==
+msExchDumpsterQuota: 31457280
+msExchCalendarLoggingQuota: 6291456
+msExchUMDtmfMap: emailAddress:347268379732724624526939192205462641538023730933
+ 422852
+msExchUMDtmfMap: lastNameFirstName:6739243472683796245269391922054626415380237
+ 30933422852
+msExchUMDtmfMap: firstNameLastName:6739243472683796245269391922054626415380237
+ 30933422852
+msExchArchiveWarnQuota: 94371840
+msExchModerationFlags: 6
+msExchRecipientSoftDeletedStatus: 0
+msExchUserAccountControl: 2
+msExchUMEnabledFlags2: -1
+msExchMailboxFolderSet: 0
+submissionContLength: 102400
+mDBUseDefaults: FALSE
+msExchBypassAudit: FALSE
+msExchMailboxAuditLogAgeLimit: 7776000
+msExchPoliciesIncluded: f5cca5ec-fafc-4e09-8b7f-be05572cb7cb
+msExchPoliciesIncluded: {26491cfc-9e50-4857-861b-0cb8df22b5d7}
+msExchRecipientTypeDetails: 536870912
+mailNickname: DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+msExchWhenMailboxCreated: 20190919114736.0Z
+msExchGroupSecurityFlags: 0
+msExchAddressBookFlags: 1
+
+# Migration.8f3e7716-2011-43e4-96b1-aba62d229136, Users, htb.local
+dn: CN=Migration.8f3e7716-2011-43e4-96b1-aba62d229136,CN=Users,DC=htb,DC=local
+ufn: Migration.8f3e7716-2011-43e4-96b1-aba62d229136, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Migration.8f3e7716-2011-43e4-96b1-aba62d229136
+sn: Migration.8f3e7716-2011-43e4-96b1-aba62d229136
+distinguishedName: CN=Migration.8f3e7716-2011-43e4-96b1-aba62d229136,CN=Users,
+ DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190919111127.0Z
+whenChanged: 20190919114742.0Z
+displayName: Microsoft Exchange Migration
+uSNCreated: 23797
+uSNChanged: 24846
+proxyAddresses: SMTP:Migration.8f3e7716-2011-43e4-96b1-aba62d229136@htb.local
+name: Migration.8f3e7716-2011-43e4-96b1-aba62d229136
+objectGUID:: s1bU7YOEDEuVZumpiFilFg==
+userAccountControl: 514
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPaAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: SM_1b41c9286325456bb
+sAMAccountType: 805306368
+legacyExchangeDN: /o=First Organization/ou=Exchange Administrative Group (FYDI
+ BOHF23SPDLT)/cn=Recipients/cn=57e7055a5ddd483c8abc1df53105efc9-Migra
+userPrincipalName: Migration.8f3e7716-2011-43e4-96b1-aba62d229136@htb.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+mail: Migration.8f3e7716-2011-43e4-96b1-aba62d229136@htb.local
+msExchVersion: 1126140425011200
+mDBOverHardQuotaLimit: 307200
+msExchProvisioningFlags: 0
+homeMDB: CN=Mailbox Database 1118319013,CN=Databases,CN=Exchange Administrativ
+ e Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=First Organization,CN=M
+ icrosoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=local
+mDBStorageQuota: 153600
+msExchMailboxSecurityDescriptor:: AQAEgBQAAAAgAAAAAAAAACwAAAABAQAAAAAABQoAAAAB
+ AQAAAAAABQoAAAAEABwAAQAAAAACFAAFAAIAAQEAAAAAAAUKAAAA
+msExchRequireAuthToSendTo: TRUE
+msExchArchiveQuota: 104857600
+msExchMailboxAuditEnable: FALSE
+msExchTransportRecipientSettingsFlags: 0
+msExchMessageHygieneSCLRejectThreshold: 7
+msExchDumpsterWarningQuota: 20971520
+msExchELCMailboxFlags: 130
+msExchHideFromAddressLists: TRUE
+msExchHomeServerName: /o=First Organization/ou=Exchange Administrative Group (
+ FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=EXCH01
+mDBOverQuotaLimit: 307200
+msExchMasterAccountSid:: AQEAAAAAAAUKAAAA
+msExchMessageHygieneSCLQuarantineThreshold: 9
+msExchMailboxGuid:: syuTWHYEuUOSJ6L0QmB0wA==
+msExchMessageHygieneSCLJunkThreshold: 4
+msExchDumpsterQuota: 31457280
+msExchCalendarLoggingQuota: 6291456
+msExchUMDtmfMap: emailAddress:64472846683337716201143349621222623229136
+msExchUMDtmfMap: lastNameFirstName:64472846683337716201143349621222623229136
+msExchUMDtmfMap: firstNameLastName:64472846683337716201143349621222623229136
+msExchArchiveWarnQuota: 94371840
+msExchModerationFlags: 6
+msExchCapabilityIdentifiers: 48
+msExchRecipientSoftDeletedStatus: 0
+msExchUserAccountControl: 2
+msExchUMEnabledFlags2: -1
+msExchMailboxFolderSet: 0
+msExchMessageHygieneSCLDeleteThreshold: 9
+msExchRecipientDisplayType: 10
+mDBUseDefaults: FALSE
+msExchBypassAudit: FALSE
+msExchMailboxAuditLogAgeLimit: 7776000
+msExchPoliciesIncluded: f5cca5ec-fafc-4e09-8b7f-be05572cb7cb
+msExchPoliciesIncluded: {26491cfc-9e50-4857-861b-0cb8df22b5d7}
+msExchRecipientTypeDetails: 8388608
+mailNickname: Migration.8f3e7716-2011-43e4-96b1-aba62d229136
+msExchWhenMailboxCreated: 20190919114742.0Z
+msExchGroupSecurityFlags: 0
+msExchAddressBookFlags: 1
+
+# FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042, Users, htb.local
+dn: CN=FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042,CN=Users,DC=htb,DC=
+ local
+ufn: FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
+sn: FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
+distinguishedName: CN=FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042,CN=U
+ sers,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190919111127.0Z
+whenChanged: 20190919114748.0Z
+displayName: Microsoft Exchange Federation Mailbox
+uSNCreated: 23802
+uSNChanged: 24851
+proxyAddresses: SMTP:FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042@htb.l
+ ocal
+name: FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
+objectGUID:: Jpe+UhI/0U+hOqUjWjHlhw==
+userAccountControl: 514
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPaQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: SM_9b69f1b9d2cc45549
+sAMAccountType: 805306368
+legacyExchangeDN: /o=First Organization/ou=Exchange Administrative Group (FYDI
+ BOHF23SPDLT)/cn=Recipients/cn=1e107e142f7341cc8acb1597635d96e0-Feder
+userPrincipalName: FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042@htb.loc
+ al
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+mail: FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042@htb.local
+msExchVersion: 1126140425011200
+mDBOverHardQuotaLimit: 1024
+msExchProvisioningFlags: 0
+homeMDB: CN=Mailbox Database 1118319013,CN=Databases,CN=Exchange Administrativ
+ e Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=First Organization,CN=M
+ icrosoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=local
+mDBStorageQuota: 1024
+msExchMailboxSecurityDescriptor:: AQAEgBQAAAAgAAAAAAAAACwAAAABAQAAAAAABQoAAAAB
+ AQAAAAAABQoAAAAEABwAAQAAAAACFAAFAAIAAQEAAAAAAAUKAAAA
+msExchArchiveQuota: 104857600
+msExchMailboxAuditEnable: FALSE
+msExchTransportRecipientSettingsFlags: 0
+msExchMessageHygieneSCLRejectThreshold: 7
+msExchDumpsterWarningQuota: 20971520
+msExchELCMailboxFlags: 130
+msExchHideFromAddressLists: TRUE
+msExchHomeServerName: /o=First Organization/ou=Exchange Administrative Group (
+ FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=EXCH01
+mDBOverQuotaLimit: 1024
+msExchMasterAccountSid:: AQEAAAAAAAUKAAAA
+msExchMessageHygieneSCLQuarantineThreshold: 9
+msExchMailboxGuid:: fD9/P9UhF0uiEChI8RY5QA==
+msExchMessageHygieneSCLJunkThreshold: 4
+msExchDumpsterQuota: 31457280
+msExchCalendarLoggingQuota: 6291456
+msExchUMDtmfMap: emailAddress:3333728333624542134382817941489323002953213042
+msExchUMDtmfMap: lastNameFirstName:3333728333624542134382817941489323002953213
+ 042
+msExchUMDtmfMap: firstNameLastName:3333728333624542134382817941489323002953213
+ 042
+msExchArchiveWarnQuota: 94371840
+msExchRMSComputerAccountsLink: CN=EXCH01,CN=Computers,DC=htb,DC=local
+msExchModerationFlags: 6
+msExchRecipientSoftDeletedStatus: 0
+msExchUserAccountControl: 2
+msExchUMEnabledFlags2: -1
+msExchMailboxFolderSet: 0
+msExchMessageHygieneSCLDeleteThreshold: 9
+msExchRecipientDisplayType: 10
+mDBUseDefaults: FALSE
+msExchBypassAudit: FALSE
+msExchMailboxAuditLogAgeLimit: 7776000
+msExchPoliciesIncluded: f5cca5ec-fafc-4e09-8b7f-be05572cb7cb
+msExchPoliciesIncluded: {26491cfc-9e50-4857-861b-0cb8df22b5d7}
+msExchRecipientTypeDetails: 8388608
+mailNickname: FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
+msExchWhenMailboxCreated: 20190919114748.0Z
+msExchGroupSecurityFlags: 0
+msExchAddressBookFlags: 1
+
+# SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}, Users, htb.local
+dn: CN=SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201},CN=Users,DC=htb,DC=
+ local
+ufn: SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}
+sn: SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}
+distinguishedName: CN=SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201},CN=U
+ sers,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190919111127.0Z
+whenChanged: 20190919114755.0Z
+displayName: E4E Encryption Store - Active
+uSNCreated: 23807
+uSNChanged: 24860
+proxyAddresses: SMTP:SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}@htb.l
+ ocal
+name: SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}
+objectGUID:: Yvc8FaVcu0SjkPENaJDM3w==
+userAccountControl: 514
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPagQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: SM_7c96b981967141ebb
+sAMAccountType: 805306368
+legacyExchangeDN: /o=First Organization/ou=Exchange Administrative Group (FYDI
+ BOHF23SPDLT)/cn=Recipients/cn=7faef2597f78442cb92fa80bfa3fe4ad-Syste
+userPrincipalName: SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}@htb.loc
+ al
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+mail: SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}@htb.local
+msExchVersion: 1126140425011200
+msExchProvisioningFlags: 0
+homeMDB: CN=Mailbox Database 1118319013,CN=Databases,CN=Exchange Administrativ
+ e Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=First Organization,CN=M
+ icrosoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=local
+msExchApprovalApplicationLink: CN=ModeratedRecipients,CN=Approval Applications
+ ,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=
+ htb,DC=local
+msExchApprovalApplicationLink: CN=AutoGroup,CN=Approval Applications,CN=First 
+ Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=loc
+ al
+msExchMailboxSecurityDescriptor:: AQAEgBQAAAAgAAAAAAAAACwAAAABAQAAAAAABQoAAAAB
+ AQAAAAAABQoAAAAEABwAAQAAAAACFAAFAAIAAQEAAAAAAAUKAAAA
+msExchArchiveQuota: 104857600
+msExchMailboxAuditEnable: FALSE
+msExchTransportRecipientSettingsFlags: 0
+msExchMessageHygieneSCLRejectThreshold: 7
+msExchDumpsterWarningQuota: 20971520
+msExchELCMailboxFlags: 130
+msExchMailboxTemplateLink: CN=ArbitrationMailbox,CN=Retention Policies Contain
+ er,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,D
+ C=htb,DC=local
+msExchHideFromAddressLists: TRUE
+msExchHomeServerName: /o=First Organization/ou=Exchange Administrative Group (
+ FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=EXCH01
+msExchMasterAccountSid:: AQEAAAAAAAUKAAAA
+msExchMessageHygieneSCLQuarantineThreshold: 9
+msExchMailboxGuid:: B27fWZaGWkSWt4VxrYsCNg==
+msExchMessageHygieneSCLJunkThreshold: 4
+msExchDumpsterQuota: 31457280
+msExchCalendarLoggingQuota: 6291456
+msExchUMDtmfMap: emailAddress:797836624526930340920239247209233222869203201
+msExchUMDtmfMap: lastNameFirstName:7978366245269303409202392472092332228692032
+ 01
+msExchUMDtmfMap: firstNameLastName:7978366245269303409202392472092332228692032
+ 01
+msExchArchiveWarnQuota: 94371840
+msExchModerationFlags: 6
+msExchRecipientSoftDeletedStatus: 0
+msExchUserAccountControl: 2
+msExchUMEnabledFlags2: -1
+msExchMailboxFolderSet: 0
+msExchMessageHygieneSCLDeleteThreshold: 9
+msExchRecipientDisplayType: 10
+mDBUseDefaults: FALSE
+msExchBypassAudit: FALSE
+msExchMailboxAuditLogAgeLimit: 7776000
+msExchPoliciesIncluded: f5cca5ec-fafc-4e09-8b7f-be05572cb7cb
+msExchPoliciesIncluded: {26491cfc-9e50-4857-861b-0cb8df22b5d7}
+msExchRecipientTypeDetails: 8388608
+mailNickname: SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}
+msExchWhenMailboxCreated: 20190919114755.0Z
+msExchGroupSecurityFlags: 0
+msExchAddressBookFlags: 1
+
+# SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}, Users, htb.local
+dn: CN=SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA},CN=Users,DC=htb,DC=
+ local
+ufn: SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}
+sn: SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}
+distinguishedName: CN=SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA},CN=U
+ sers,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190919111127.0Z
+whenChanged: 20190919114801.0Z
+displayName: Microsoft Exchange
+uSNCreated: 23812
+uSNChanged: 24868
+proxyAddresses: SMTP:SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}@htb.l
+ ocal
+name: SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}
+objectGUID:: 6gOmQ5y9aU++f9huTdNcAA==
+userAccountControl: 514
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPawQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: SM_c75ee099d0a64c91b
+sAMAccountType: 805306368
+legacyExchangeDN: /o=First Organization/ou=Exchange Administrative Group (FYDI
+ BOHF23SPDLT)/cn=Recipients/cn=7f26bba260144bd2b20640d80eea5c48-Syste
+userPrincipalName: SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}@htb.loc
+ al
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+mail: SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}@htb.local
+msExchVersion: 1126140425011200
+msExchProvisioningFlags: 0
+homeMDB: CN=Mailbox Database 1118319013,CN=Databases,CN=Exchange Administrativ
+ e Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=First Organization,CN=M
+ icrosoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=local
+msExchApprovalApplicationLink: CN=ModeratedRecipients,CN=Approval Applications
+ ,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=
+ htb,DC=local
+msExchApprovalApplicationLink: CN=AutoGroup,CN=Approval Applications,CN=First 
+ Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=loc
+ al
+msExchMailboxSecurityDescriptor:: AQAEgBQAAAAgAAAAAAAAACwAAAABAQAAAAAABQoAAAAB
+ AQAAAAAABQoAAAAEABwAAQAAAAACFAAFAAIAAQEAAAAAAAUKAAAA
+msExchArchiveQuota: 104857600
+msExchMailboxAuditEnable: FALSE
+msExchTransportRecipientSettingsFlags: 0
+msExchMessageHygieneSCLRejectThreshold: 7
+msExchDumpsterWarningQuota: 20971520
+msExchELCMailboxFlags: 130
+msExchMailboxTemplateLink: CN=ArbitrationMailbox,CN=Retention Policies Contain
+ er,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,D
+ C=htb,DC=local
+msExchHideFromAddressLists: TRUE
+msExchHomeServerName: /o=First Organization/ou=Exchange Administrative Group (
+ FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=EXCH01
+msExchMasterAccountSid:: AQEAAAAAAAUKAAAA
+msExchMessageHygieneSCLQuarantineThreshold: 9
+msExchMailboxGuid:: 5HiVxBNcaEiZERAdAbA1Zw==
+msExchMessageHygieneSCLJunkThreshold: 4
+msExchDumpsterQuota: 31457280
+msExchCalendarLoggingQuota: 6291456
+msExchUMDtmfMap: emailAddress:797836624526922334405312345538937272732720322
+msExchUMDtmfMap: lastNameFirstName:7978366245269223344053123455389372727327203
+ 22
+msExchUMDtmfMap: firstNameLastName:7978366245269223344053123455389372727327203
+ 22
+msExchArchiveWarnQuota: 94371840
+msExchModerationFlags: 6
+msExchCapabilityIdentifiers: 66
+msExchRecipientSoftDeletedStatus: 0
+msExchUserAccountControl: 2
+msExchUMEnabledFlags2: -1
+msExchMailboxFolderSet: 0
+msExchMessageHygieneSCLDeleteThreshold: 9
+msExchRecipientDisplayType: 10
+mDBUseDefaults: FALSE
+msExchBypassAudit: FALSE
+msExchMailboxAuditLogAgeLimit: 7776000
+msExchPoliciesIncluded: f5cca5ec-fafc-4e09-8b7f-be05572cb7cb
+msExchPoliciesIncluded: {26491cfc-9e50-4857-861b-0cb8df22b5d7}
+msExchRecipientTypeDetails: 8388608
+mailNickname: SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}
+msExchWhenMailboxCreated: 20190919114801.0Z
+msExchGroupSecurityFlags: 0
+msExchAddressBookFlags: 1
+
+# SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}, Users, htb.local
+dn: CN=SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9},CN=Users,DC=htb,DC=
+ local
+ufn: SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}
+sn: SystemMailbox 8cc370d3-822a-4ab8-a926-bb94bd0641a9
+distinguishedName: CN=SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9},CN=U
+ sers,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190919111127.0Z
+whenChanged: 20190919114808.0Z
+displayName: SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}
+uSNCreated: 23820
+uSNChanged: 24872
+proxyAddresses: SMTP:SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}@htb.l
+ ocal
+name: SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}
+objectGUID:: 40l0wLKH/UytuqoyOwty8A==
+userAccountControl: 514
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPbAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: SM_1ffab36a2f5f479cb
+sAMAccountType: 805306368
+legacyExchangeDN: /o=First Organization/ou=Exchange Administrative Group (FYDI
+ BOHF23SPDLT)/cn=Recipients/cn=5219688069384f3ea20b8ad4c26a9dab-Syste
+userPrincipalName: SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}@htb.loc
+ al
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+mail: SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}@htb.local
+msExchVersion: 1126140425011200
+mDBOverHardQuotaLimit: 52428800
+msExchProvisioningFlags: 0
+homeMDB: CN=Mailbox Database 1118319013,CN=Databases,CN=Exchange Administrativ
+ e Group (FYDIBOHF23SPDLT),CN=Administrative Groups,CN=First Organization,CN=M
+ icrosoft Exchange,CN=Services,CN=Configuration,DC=htb,DC=local
+msExchMailboxSecurityDescriptor:: AQAEgBQAAAAgAAAAAAAAACwAAAABAQAAAAAABQoAAAAB
+ AQAAAAAABQoAAAAEABwAAQAAAAACFAABAAIAAQEAAAAAAAUKAAAA
+msExchArchiveQuota: 104857600
+msExchMailboxAuditEnable: FALSE
+msExchTransportRecipientSettingsFlags: 0
+msExchDumpsterWarningQuota: 20971520
+msExchELCMailboxFlags: 134
+msExchHideFromAddressLists: TRUE
+msExchHomeServerName: /o=First Organization/ou=Exchange Administrative Group (
+ FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=EXCH01
+mDBOverQuotaLimit: 52428800
+msExchMasterAccountSid:: AQEAAAAAAAUKAAAA
+msExchRBACPolicyLink: CN=Default Role Assignment Policy,CN=Policies,CN=RBAC,CN
+ =First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=htb
+ ,DC=local
+msExchMailboxGuid:: c7CT+Ckv/U+vK1QaY1W/FA==
+msExchDumpsterQuota: 52428800
+msExchCalendarLoggingQuota: 6291456
+msExchUMDtmfMap: emailAddress:797836624526982237033822242282926229423064129
+msExchUMDtmfMap: lastNameFirstName:7978366245269822370338222422829262294230641
+ 29
+msExchUMDtmfMap: firstNameLastName:7978366245269822370338222422829262294230641
+ 29
+msExchArchiveWarnQuota: 94371840
+msExchModerationFlags: 6
+msExchRecipientSoftDeletedStatus: 0
+msExchUserAccountControl: 2
+msExchUMEnabledFlags2: -1
+msExchMailboxFolderSet: 0
+mDBUseDefaults: FALSE
+msExchBypassAudit: FALSE
+msExchMailboxAuditLogAgeLimit: 7776000
+msExchPoliciesIncluded: f5cca5ec-fafc-4e09-8b7f-be05572cb7cb
+msExchPoliciesIncluded: {26491cfc-9e50-4857-861b-0cb8df22b5d7}
+msExchRecipientTypeDetails: 4398046511104
+mailNickname: SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}
+msExchWhenMailboxCreated: 20190919114808.0Z
+msExchGroupSecurityFlags: 0
+msExchAddressBookFlags: 1
+
+# User02, Users, htb.local
+dn: CN=User02,CN=Users,DC=htb,DC=local
+ufn: User02, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: User02
+description: Description of this account.
+distinguishedName: CN=User02,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20200223081408.0Z
+whenChanged: 20200223082942.0Z
+uSNCreated: 316716
+memberOf: CN=Remote Management Users,CN=Builtin,DC=htb,DC=local
+uSNChanged: 348791
+name: User02
+objectGUID:: jSQ2uWZchU641BTVxPsZIA==
+userAccountControl: 544
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+logonHours:: ////////////////////////////
+pwdLastSet: 132269201825039923
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPsR0AAA==
+accountExpires: 0
+logonCount: 0
+sAMAccountName: User02
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# mesh, Users, htb.local
+dn: CN=mesh,CN=Users,DC=htb,DC=local
+ufn: mesh, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: mesh
+distinguishedName: CN=mesh,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20200223090711.0Z
+whenChanged: 20200223090711.0Z
+uSNCreated: 431486
+memberOf: CN=Exchange Servers,OU=Microsoft Exchange Security Groups,DC=htb,DC=
+ local
+memberOf: CN=Allowed RODC Password Replication Group,CN=Users,DC=htb,DC=local
+memberOf: CN=Incoming Forest Trust Builders,CN=Builtin,DC=htb,DC=local
+memberOf: CN=Remote Management Users,CN=Builtin,DC=htb,DC=local
+uSNChanged: 431489
+name: mesh
+objectGUID:: DZeNjNXoYki8Sij39ixmLQ==
+userAccountControl: 512
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132269224315957122
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPsx0AAA==
+accountExpires: 0
+logonCount: 0
+sAMAccountName: mesh
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Administrator, Users, htb.local
+dn: CN=Administrator,CN=Users,DC=htb,DC=local
+ufn: Administrator, Users, htb.local
+
+# Guest, Users, htb.local
+dn: CN=Guest,CN=Users,DC=htb,DC=local
+ufn: Guest, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Guest
+description: Built-in account for guest access to the computer/domain
+distinguishedName: CN=Guest,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918174557.0Z
+whenChanged: 20190918174557.0Z
+uSNCreated: 8197
+memberOf: CN=Guests,CN=Builtin,DC=htb,DC=local
+uSNChanged: 8197
+name: Guest
+objectGUID:: 3cHbrmUFAEi25kbTT5W9gA==
+userAccountControl: 66082
+badPwdCount: 587
+codePage: 0
+countryCode: 0
+badPasswordTime: 132269196358011323
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 514
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNP9QEAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Guest
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# DefaultAccount, Users, htb.local
+dn: CN=DefaultAccount,CN=Users,DC=htb,DC=local
+ufn: DefaultAccount, Users, htb.local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: DefaultAccount
+description: A user account managed by the system.
+distinguishedName: CN=DefaultAccount,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918174557.0Z
+whenChanged: 20190918174557.0Z
+uSNCreated: 8198
+memberOf: CN=System Managed Accounts Group,CN=Builtin,DC=htb,DC=local
+uSNChanged: 8198
+name: DefaultAccount
+objectGUID:: y2NvxY2HHEaASPoaHAyHpQ==
+userAccountControl: 66082
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNP9wEAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: DefaultAccount
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# krbtgt, Users, htb.local
+dn: CN=krbtgt,CN=Users,DC=htb,DC=local
+ufn: krbtgt, Users, htb.local
+
+# Domain Computers, Users, htb.local
+dn: CN=Domain Computers,CN=Users,DC=htb,DC=local
+ufn: Domain Computers, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Domain Computers
+description: All workstations and servers joined to the domain
+distinguishedName: CN=Domain Computers,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20190918105323.0Z
+uSNCreated: 12330
+uSNChanged: 12332
+name: Domain Computers
+objectGUID:: ouVSboyF2E6XJsPHbqQOaw==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPAwIAAA==
+sAMAccountName: Domain Computers
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Domain Controllers, Users, htb.local
+dn: CN=Domain Controllers,CN=Users,DC=htb,DC=local
+ufn: Domain Controllers, Users, htb.local
+
+# Schema Admins, Users, htb.local
+dn: CN=Schema Admins,CN=Users,DC=htb,DC=local
+ufn: Schema Admins, Users, htb.local
+
+# Enterprise Admins, Users, htb.local
+dn: CN=Enterprise Admins,CN=Users,DC=htb,DC=local
+ufn: Enterprise Admins, Users, htb.local
+
+# Cert Publishers, Users, htb.local
+dn: CN=Cert Publishers,CN=Users,DC=htb,DC=local
+ufn: Cert Publishers, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Cert Publishers
+description: Members of this group are permitted to publish certificates to th
+ e directory
+distinguishedName: CN=Cert Publishers,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20190918105323.0Z
+uSNCreated: 12342
+memberOf: CN=Denied RODC Password Replication Group,CN=Users,DC=htb,DC=local
+uSNChanged: 12344
+name: Cert Publishers
+objectGUID:: s9ucbYQ6Ok2Dkp1RfN/Gcg==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPBQIAAA==
+sAMAccountName: Cert Publishers
+sAMAccountType: 536870912
+groupType: -2147483644
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Domain Admins, Users, htb.local
+dn: CN=Domain Admins,CN=Users,DC=htb,DC=local
+ufn: Domain Admins, Users, htb.local
+
+# Domain Users, Users, htb.local
+dn: CN=Domain Users,CN=Users,DC=htb,DC=local
+ufn: Domain Users, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Domain Users
+description: All domain users
+distinguishedName: CN=Domain Users,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20190918105323.0Z
+uSNCreated: 12348
+memberOf: CN=Users,CN=Builtin,DC=htb,DC=local
+uSNChanged: 12350
+name: Domain Users
+objectGUID:: Na/TfFLGD0Cf2TRb9LP8eg==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPAQIAAA==
+sAMAccountName: Domain Users
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Domain Guests, Users, htb.local
+dn: CN=Domain Guests,CN=Users,DC=htb,DC=local
+ufn: Domain Guests, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Domain Guests
+description: All domain guests
+distinguishedName: CN=Domain Guests,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20190918105323.0Z
+uSNCreated: 12351
+memberOf: CN=Guests,CN=Builtin,DC=htb,DC=local
+uSNChanged: 12353
+name: Domain Guests
+objectGUID:: mswRDKs9T0mL7UeCdKTzRQ==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPAgIAAA==
+sAMAccountName: Domain Guests
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Group Policy Creator Owners, Users, htb.local
+dn: CN=Group Policy Creator Owners,CN=Users,DC=htb,DC=local
+ufn: Group Policy Creator Owners, Users, htb.local
+objectClass: top
+objectClass: group
+cn: Group Policy Creator Owners
+description: Members in this group can modify group policy for the domain
+member: CN=Administrator,CN=Users,DC=htb,DC=local
+distinguishedName: CN=Group Policy Creator Owners,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20190918105323.0Z
+uSNCreated: 12354
+memberOf: CN=Denied RODC Password Replication Group,CN=Users,DC=htb,DC=local
+uSNChanged: 12391
+name: Group Policy Creator Owners
+objectGUID:: WVPwKNm8xkWJv4Dg3cfD/g==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPCAIAAA==
+sAMAccountName: Group Policy Creator Owners
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# RAS and IAS Servers, Users, htb.local
+dn: CN=RAS and IAS Servers,CN=Users,DC=htb,DC=local
+ufn: RAS and IAS Servers, Users, htb.local
+objectClass: top
+objectClass: group
+cn: RAS and IAS Servers
+description: Servers in this group can access remote access properties of user
+ s
+distinguishedName: CN=RAS and IAS Servers,CN=Users,DC=htb,DC=local
+instanceType: 4
+whenCreated: 20190918105323.0Z
+whenChanged: 20190918105323.0Z
+uSNCreated: 12357
+uSNChanged: 12359
+name: RAS and IAS Servers
+objectGUID:: XEcpu64kSEGMxmiOGimA5g==
+objectSid:: AQUAAAAAAAUVAAAALB4ltxV1shXFsPNPKQIAAA==
+sAMAccountName: RAS and IAS Servers
+sAMAccountType: 536870912
+groupType: -2147483644
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=htb,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101615.0Z
+dSCorePropagationData: 20200223101614.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 38
+# numEntries: 37

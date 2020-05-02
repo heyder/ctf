@@ -1,0 +1,9 @@
+vhost:
+    staging-order.mango.htb
+users:
+    admin@mango.htb (password lengh: 12)
+    mango
+
+creds:
+    admin:t9KcS3>!0B#2
+    mango:h3mXK8RhU~f{]f5H

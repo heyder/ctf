@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Wed Mar 18 21:16:28 2020 as: nmap -v -p- -oA scans/allports 10.10.10.161
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.161 (forest.htb.local)	Status: Up
+Host: 10.10.10.161 (forest.htb.local)	Ports: 53/open/tcp//domain///, 88/open/tcp//kerberos-sec///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 389/open/tcp//ldap///, 445/open/tcp//microsoft-ds///, 464/open/tcp//kpasswd5///, 593/open/tcp//http-rpc-epmap///, 636/open/tcp//ldapssl///, 3268/open/tcp//globalcatLDAP///, 3269/open/tcp//globalcatLDAPssl///, 5985/open/tcp//wsman///, 9389/open/tcp//adws///, 47001/open/tcp//winrm///, 49664/open/tcp/////, 49665/open/tcp/////, 49666/open/tcp/////, 49667/open/tcp/////, 49676/open/tcp/////, 49677/open/tcp/////, 49684/open/tcp/////, 49703/open/tcp/////
+# Nmap done at Thu Mar 19 10:19:36 2020 -- 1 IP address (1 host up) scanned in 46988.65 seconds

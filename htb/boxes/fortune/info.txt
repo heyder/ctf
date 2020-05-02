@@ -1,0 +1,7 @@
+
+fortune.htb
+
+user:
+  bob
+  charlie
+

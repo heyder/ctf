@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Apr 14 12:20:27 2020 as: nmap -Pn -oA /home/user/.shatter/obscurity/net/default-10.10.10.168 10.10.10.168
+Host: 10.10.10.168 ()	Status: Up
+Host: 10.10.10.168 ()	Ports: 22/open/tcp//ssh///, 80/closed/tcp//http///, 8080/open/tcp//http-proxy///, 9000/closed/tcp//cslistener///	Ignored State: filtered (996)
+# Nmap done at Tue Apr 14 12:20:35 2020 -- 1 IP address (1 host up) scanned in 7.75 seconds

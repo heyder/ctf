@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Sat Jul 20 13:10:59 2019 as: nmap -sC -sV -sT --max-retries=0 -oA nmap/defalut 10.10.10.134
+Host: 10.10.10.134 ()	Status: Up
+Host: 10.10.10.134 ()	Ports: 22/open/tcp//ssh//OpenSSH for_Windows_7.9 (protocol 2.0)/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Windows Server 2016 Standard 14393 microsoft-ds/
+# Nmap done at Sat Jul 20 13:11:20 2019 -- 1 IP address (1 host up) scanned in 22.02 seconds

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Apr 14 21:50:06 2020 as: nmap -sU -v -p- -oA net/allports-udp 10.10.10.148 -->
+<nmaprun scanner="nmap" args="nmap -sU -v -p- -oA net/allports-udp 10.10.10.148" start="1586893806" startstr="Tue Apr 14 21:50:06 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1586893806"/>
+<taskend task="Ping Scan" time="1586893807" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1586893807"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1586893807"/>
+<taskbegin task="UDP Scan" time="1586893807"/>
+<taskprogress task="UDP Scan" time="1586893993" percent="0.30"/>
+<taskprogress task="UDP Scan" time="1586894023" percent="0.34"/>
+<taskprogress task="UDP Scan" time="1586894053" percent="0.39"/>
+<taskprogress task="UDP Scan" time="1586894083" percent="0.43"/>
+<taskprogress task="UDP Scan" time="1586894113" percent="0.48"/>
+<taskprogress task="UDP Scan" time="1586894143" percent="0.52"/>
+<taskprogress task="UDP Scan" time="1586894173" percent="0.57"/>
+<taskprogress task="UDP Scan" time="1586894203" percent="0.61"/>
+<taskprogress task="UDP Scan" time="1586894233" percent="0.65"/>
+<taskprogress task="UDP Scan" time="1586894263" percent="0.69"/>
+<taskprogress task="UDP Scan" time="1586894293" percent="0.74"/>
+<taskprogress task="UDP Scan" time="1586894323" percent="0.78"/>
+<taskprogress task="UDP Scan" time="1586894353" percent="0.83"/>
+<taskprogress task="UDP Scan" time="1586894383" percent="0.87"/>
+<taskprogress task="UDP Scan" time="1586894413" percent="0.92"/>
+<taskprogress task="UDP Scan" time="1586894443" percent="0.96"/>
+<taskprogress task="UDP Scan" time="1586894473" percent="1.00" remaining="65818" etc="1586960290"/>
+<taskprogress task="UDP Scan" time="1586894883" percent="1.60" remaining="66275" etc="1586961157"/>
+<taskprogress task="UDP Scan" time="1586898855" percent="7.43" remaining="62895" etc="1586961750"/>
+<taskprogress task="UDP Scan" time="1586906017" percent="17.03" remaining="59498" etc="1586965514"/>
+<taskprogress task="UDP Scan" time="1586908867" percent="21.22" remaining="55908" etc="1586964775"/>
+<taskprogress task="UDP Scan" time="1586926728" percent="23.70" remaining="105993" etc="1587032720"/>
+<taskprogress task="UDP Scan" time="1586934558" percent="23.70" remaining="131199" etc="1587065757"/>
+<taskprogress task="UDP Scan" time="1586935788" percent="25.51" remaining="122594" etc="1587058381"/>
+<taskprogress task="UDP Scan" time="1586937117" percent="27.47" remaining="114354" etc="1587051471"/>
+<taskprogress task="UDP Scan" time="1586938557" percent="29.59" remaining="106467" etc="1587045023"/>
+<taskprogress task="UDP Scan" time="1586940111" percent="31.89" remaining="98901" etc="1587039011"/>
+<taskprogress task="UDP Scan" time="1586941152" percent="33.43" remaining="94266" etc="1587035417"/>
+<taskprogress task="UDP Scan" time="1586942916" percent="36.03" remaining="87176" etc="1587030091"/>
+<taskprogress task="UDP Scan" time="1586944818" percent="38.83" remaining="80360" etc="1587025178"/>
+<taskprogress task="UDP Scan" time="1586951964" percent="39.83" remaining="87868" etc="1587039832"/>
+<taskprogress task="UDP Scan" time="1586953941" percent="42.74" remaining="80553" etc="1587034494"/>
+<taskprogress task="UDP Scan" time="1586956047" percent="45.85" remaining="73516" etc="1587029562"/>
+<taskprogress task="UDP Scan" time="1586958294" percent="49.15" remaining="66727" etc="1587025020"/>
+<taskprogress task="UDP Scan" time="1586960673" percent="52.64" remaining="60166" etc="1587020838"/>
+<taskprogress task="UDP Scan" time="1586963178" percent="56.32" remaining="53803" etc="1587016981"/>
+<taskprogress task="UDP Scan" time="1586965794" percent="60.18" remaining="47635" etc="1587013428"/>
+<taskprogress task="UDP Scan" time="1586968513" percent="64.21" remaining="41648" etc="1587010160"/>
+<taskprogress task="UDP Scan" time="1586971198" percent="68.36" remaining="35827" etc="1587007024"/>
+<taskprogress task="UDP Scan" time="1586973994" percent="72.67" remaining="30160" etc="1587004153"/>
+<taskprogress task="UDP Scan" time="1587001277" percent="73.71" remaining="38329" etc="1587039606"/>
+<taskprogress task="UDP Scan" time="1587029080" percent="81.34" remaining="31031" etc="1587060110"/>
+<taskprogress task="UDP Scan" time="1587060112" percent="87.86" remaining="22990" etc="1587083101"/>
+<taskprogress task="UDP Scan" time="1587118831" percent="87.95" remaining="30841" etc="1587149671"/>

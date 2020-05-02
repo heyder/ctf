@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Apr 17 18:49:21 2020 as: nmap -sV -sV -p22,80 -oA net/nmap-10.10.10.181-scripts 10.10.10.181 -->
+<nmaprun scanner="nmap" args="nmap -sV -sV -p22,80 -oA net/nmap-10.10.10.181-scripts 10.10.10.181" start="1587142161" startstr="Fri Apr 17 18:49:21 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1587142161" endtime="1587142169"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.181" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service></port>
+</ports>
+<times srtt="107396" rttvar="65509" to="369432"/>
+</host>
+<runstats><finished time="1587142169" timestr="Fri Apr 17 18:49:29 2020" elapsed="7.72" summary="Nmap done at Fri Apr 17 18:49:29 2020; 1 IP address (1 host up) scanned in 7.72 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

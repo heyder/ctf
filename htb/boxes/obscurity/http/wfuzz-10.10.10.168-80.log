@@ -1,0 +1,5 @@
+
+Warning: Pycurl is not compiled against Openssl. Wfuzz might not work correctly when fuzzing SSL sites. Check Wfuzz's documentation for more information.
+
+
+Fatal exception: Error opening file. [Errno 13] Permission denied: '/usr/share/wfuzz/wordlist/general/common.txt'

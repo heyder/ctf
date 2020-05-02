@@ -1,0 +1,17 @@
+[urls]
+http://friendzoneportal.red/
+http://friendzoneportal.red/wordpress/
+https://friendzone.red/
+https://friendzone.red/admin/
+https://friendzone.red/js/
+https://friendzone.red/js/js/
+
+[hosts]
+administrator1.friendzone.red
+hr.friendzone.red
+uploads.friendzone.red
+
+admin.friendzoneportal.red (404)
+files.friendzoneportal.red 
+imports.friendzoneportal.red
+vpn.friendzoneportal.red

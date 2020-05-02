@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Apr 14 22:13:51 2020 as: nmap -Pn -sV -sC -p 53,88,135,139,389,445,464,593,636,3268,3269 -oA net/nmap-10.10.10.169-versions 10.10.10.169 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sV -sC -p 53,88,135,139,389,445,464,593,636,3268,3269 -oA net/nmap-10.10.10.169-versions 10.10.10.169" start="1586895231" startstr="Tue Apr 14 22:13:51 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="11" services="53,88,135,139,389,445,464,593,636,3268-3269"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1586895232" endtime="1586895391"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.169" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" servicefp="SF-Port53-TCP:V=7.80%I=7%D=4/14%Time=5E96198B%P=x86_64-pc-linux-gnu%r(DNSVersionBindReqTCP,20,&quot;\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP: &#xa;    version&#xa;    bind"><elem key="DNSVersionBindReqTCP">&#xa;    version&#xa;    bind</elem>
+</script></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2020-04-14 20:23:43Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: megabank.local, Site: Default-First-Site-Name" hostname="RESOLUTE" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Windows Server 2016 Standard 14393 microsoft-ds" extrainfo="workgroup: MEGABANK" hostname="RESOLUTE" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: megabank.local, Site: Default-First-Site-Name" hostname="RESOLUTE" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 2h29m44s, deviation: 4h02m30s, median: 9m44s"><elem key="median">584</elem>
+<elem key="stddev">14550</elem>
+<elem key="count">3</elem>
+<elem key="mean">8984</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)&#xa;  Computer name: Resolute&#xa;  NetBIOS computer name: RESOLUTE\x00&#xa;  Domain name: megabank.local&#xa;  Forest name: megabank.local&#xa;  FQDN: Resolute.megabank.local&#xa;  System time: 2020-04-14T13:24:02-07:00&#xa;"><elem key="os">Windows Server 2016 Standard 14393</elem>
+<elem key="lanmanager">Windows Server 2016 Standard 6.3</elem>
+<elem key="server">RESOLUTE\x00</elem>
+<elem key="date">2020-04-14T13:24:02-07:00</elem>
+<elem key="fqdn">Resolute.megabank.local</elem>
+<elem key="domain_dns">megabank.local</elem>
+<elem key="forest_dns">megabank.local</elem>
+<elem key="workgroup">MEGABANK\x00</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: &lt;blank&gt;&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: required"><elem key="account_used">&lt;blank&gt;</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">required</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled and required"><table key="2.02">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2020-04-14T20:24:03&#xa;  start_date: 2020-04-14T12:54:43"><elem key="date">2020-04-14T20:24:03</elem>
+<elem key="start_date">2020-04-14T12:54:43</elem>
+</script></hostscript><times srtt="103420" rttvar="6813" to="130672"/>
+</host>
+<runstats><finished time="1586895391" timestr="Tue Apr 14 22:16:31 2020" elapsed="159.96" summary="Nmap done at Tue Apr 14 22:16:31 2020; 1 IP address (1 host up) scanned in 159.96 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

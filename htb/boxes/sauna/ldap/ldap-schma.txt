@@ -1,0 +1,4 @@
+dn: DC=EGOTISTICAL-BANK,DC=LOCAL
+subSchemaSubEntry: CN=Aggregate,CN=Schema,CN=Configuration,DC=EGOTISTICAL-BANK
+ ,DC=LOCAL
+

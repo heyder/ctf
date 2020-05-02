@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu Jul 11 15:53:34 2019 as: nmap -p 80 -&#45;script vuln -sV -oA nmap/targeted-80 10.10.10.131 -->
+<nmaprun scanner="nmap" args="nmap -p 80 -&#45;script vuln -sV -oA nmap/targeted-80 10.10.10.131" start="1562853214" startstr="Thu Jul 11 15:53:34 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<runstats><finished time="1562853228" timestr="Thu Jul 11 15:53:48 2019" elapsed="14.03" summary="Nmap done at Thu Jul 11 15:53:48 2019; 1 IP address (0 hosts up) scanned in 14.03 seconds" exit="success"/><hosts up="0" down="1" total="1"/>
+</runstats>
+</nmaprun>

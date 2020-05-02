@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Apr  7 17:09:46 2020 as: nmap -Pn -sV -sC -p 80,135,3306, -oA /home/user/.shatter/control/net/nmap-10.10.10.167-versions 10.10.10.167
+Host: 10.10.10.167 ()	Status: Up
+Host: 10.10.10.167 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 3306/open/tcp//mysql?///
+# Nmap done at Tue Apr  7 17:10:02 2020 -- 1 IP address (1 host up) scanned in 16.38 seconds
